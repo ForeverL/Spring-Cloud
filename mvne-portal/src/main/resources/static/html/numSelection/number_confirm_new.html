@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>选号码确认</title>
+  <link rel="shortcut icon" href="http://www.10086.cn/favicon.ico" type="images/x-icon">
   <link rel="stylesheet" href="../../css/common/bootstrap.css">
   <link rel="stylesheet" href="../../css/mycss/base.css">
   <link rel="stylesheet" href="../../css/mycss/choiceNumber.css">
-  <!--<script src="../../js/common/jquery.js"></script>-->
 </head>
 <body>
 <!--公共头部-->
@@ -98,43 +98,7 @@
   <span>中华人民共和国增值电信业务经营许可证  经营许可证编号：A2.B1.B2-20100001</span>
   <span>京ICP备05002571号</span>
 </div>
-<script src="../../js/common/jquery.js"></script>
-<script>
-  $(function () {
-	  var numChoose = localStorage.numChoise ;
-	  console.log(numChoose);
-    $(".chioseNumber").text(localStorage.numChoise);
-    // 一进来页面，获取后台数据渲染页面
-    /*$.ajax({
-     url:"",
-     data:{},
-     success:function (data) {
-     console.log(data);
-     }
-     });*/
-    // 点击上一步，返回到上一个页面
-    $(".laststep").click(function () {
-      window.location.href = "choose_number_new.html";
-    });
-    // 点击下一步，确认信息之后就要跳转到下一个页面
-    $(".nextstep").click(function () {
-    	$.ajax({
-        	contentType:"application/json",
-            url:"/LockAffirm?bill_id="+numChoose,
-            type:"POST",
-            //或者data:JSON.stringify(number),
-            data:JSON.stringify({
-          	  		//"bill_id" : numChoise
-          	  		//"numMoney" : numMoney
-          	  	    }),
-            success:function (data) {
-              console.log(data);
-              alert(data,",号码以锁定，请在30分钟内进行支付！");
-              window.location.href="name_certification.html"
-            }
-      	});
-    });
-  });
-</script>
+<script src="../../js/common/jquery-2.0.3.min.js"></script>
+<script src="../../js/numSelection/numberConfirm.js"></script>
 </body>
 </html>

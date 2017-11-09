@@ -40,6 +40,9 @@
 .content .bd {
   margin-top: 47px;
 }
+.content .bd ul.tariffIntroCon {
+  margin-bottom: 97px;
+}
 .content .bd ul.tariffIntroCon th {
   width: 400px;
   height: 62px;
@@ -64,11 +67,11 @@
 }
 .content .order .orderImg {
   height: 150px;
-  background: transparent url("../../img/order1.png") center no-repeat;
+  background: transparent url("../../img/numSelection/1.png") center no-repeat;
 }
 .content .order .orderImg2 {
   height: 150px;
-  background: transparent url("../../img/order2.png") center no-repeat;
+  background: transparent url("../../img/numSelection/2.png") center no-repeat;
 }
 .content .menu {
   padding-top: 12px;
@@ -193,7 +196,7 @@ input::-webkit-inner-spin-button{
   width: 20px;
   height: 20px;
   background-color: hotpink;
-  background: transparent url("../../img/search.png") center no-repeat;
+  background: transparent url("../../img/numSelection/search.png") center no-repeat;
 }
 .content .numberListMenu a.update {
   float: right;
@@ -207,7 +210,7 @@ input::-webkit-inner-spin-button{
   background-color: #ffffff;
   border: solid 1px #4ca5fc;
   color: #4ca5fc;
-  background: transparent url("../../img/refresh.png") 68px 8px no-repeat;
+  background: transparent url("../../img/numSelection/refresh.png") 68px 8px no-repeat;
 }
 .content .numberListMenu a.update:hover {
   text-decoration: none;
@@ -233,9 +236,6 @@ input::-webkit-inner-spin-button{
   font-weight: 400;
   color: #666;
 }
-/*.content .numberList ul li span.numMoney {
-  color: #198bd4;
-}*/
 .content .numberList ul li span.includeMoney {
   margin-top: 8px;
   color: #888;
@@ -269,7 +269,7 @@ input::-webkit-inner-spin-button{
 .content .chiosecar .chiosecarleft .carClassImg {
   width: 139px;
   height: 141px;
-  background: transparent url("../../img/Messenger.png") center no-repeat;
+  background: transparent url("../../img/public/Messenger.png") center no-repeat;
   background-size: 100%;
 }
 .content .chiosecar .chiosecarright {
@@ -396,7 +396,6 @@ input::-webkit-inner-spin-button{
 .content .checkInfo .certFrame .imgUpdate div {
   float: left;
   margin-right: 30px;
-  /*margin-bottom: 31px;*/
 }
 .content .checkInfo .certFrame .imgUpdate span {
   display: block;
