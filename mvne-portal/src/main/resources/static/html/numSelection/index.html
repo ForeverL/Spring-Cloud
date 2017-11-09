@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../../css/mycss/base.css">
+  <link rel="stylesheet" href="../../css/common/bootstrap.css">
+  <link rel="stylesheet" href="../../css/mycss/choiceNumber.css">
+  <link rel="stylesheet" href="../../css/common/animate.min.css">
+  <script src="../../js/common/jquery.js"></script>
+  <script src="../../js/common/swiper-3.4.2.jquery.min.js"></script>
+  <!--<script src="../../js/public/public.js"></script>-->
+  <!--<script src="../../js/common/bootstrap.js"></script>-->
+</head>
+<body>
+<!--公共头部-->
+<div class="container">
+  <div class="header">
+    <div class="logoBox">
+      <div class="logo"></div>
+    </div>
+    <ul class="headerNav">
+      <li><a href="javascript:;">首页</a></li>
+      <li><a href="choose_package_new.html">选号入网</a></li>
+      <li><a href="javascript:;">网上营业厅</a></li>
+      <li><a href="javascript:;">服务与支持</a></li>
+      <li><a href="javascript:;">搜索</a></li>
+    </ul>
+    <div class="loginBtnBox">
+      <button class="loginBtn">登陆</button>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <!--<div class="banner">
+    <ul>
+      <li><img src="../../img/1.jpg" width="500" height="200"/></li>
+      <li><img src="../../img/2.jpg" width="500" height="200"/></li>
+      <li><img src="../../img/3.jpg" width="500" height="200"/></li>
+      <li><img src="../../img/4.jpg" width="500" height="200"/></li>
+      <li><img src="../../img/5.jpg" width="500" height="200"/></li>
+    </ul>
+  </div>-->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">slider1</div>
+      <div class="swiper-slide">slider2</div>
+      <div class="swiper-slide">slider3</div>
+    </div>
+  </div>
+  
+  <a href="choose_number.html">下一步</a>
+</div>
+</body>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: 5000,//可选选项，自动滑动
+  })
+</script>
+</html>

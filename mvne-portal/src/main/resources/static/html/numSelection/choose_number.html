@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>选号码</title>
+  <link rel="stylesheet" href="../../css/common/bootstrap.css">
+  <link rel="stylesheet" href="../../css/mycss/base.css">
+  <link rel="stylesheet" href="../../css/mycss/choiceNumber.css">
+</head>
+<body>
+<!--公共头部-->
+<div class="header">
+  <div class="container">
+    <div class="logoBox">
+      <div class="logo"></div>
+    </div>
+    <ul class="headerNav">
+      <li class="firstPage"><a href="javascript:;">首页</a></li>
+      <li><a class="active" href="javascript:;">选号入网</a></li>
+      <li><a href="javascript:;">网上营业厅</a></li>
+      <li><a href="javascript:;">服务与支持</a></li>
+    </ul>
+    <ul class="countNav">
+      <li class="searchFrame"><a class="searchBtn" href="javascript:;"></a></li>
+      <li class="accountFrame"><a class="account" href="javascript:;"></a></li>
+    </ul>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="container">
+  <div class="content">
+    <div class="contentNav">
+      <a href="javascript:;">首页</a> > <a href="javascript:;">选号入网</a>
+    </div>
+    <div class="order">
+      <div class="orderImg"></div>
+    </div>
+    <div class="menu">
+      <dl class="carAss">
+        <dt>已选卡类：</dt>
+        <dd>
+          <ul>
+            <li><a class="carActive" href="javascript:;">一类卡</a></li>
+            <li><a href="javascript:;">二类卡</a></li>
+            <li><a href="javascript:;">三类卡</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl class="setMeal">
+        <dt>套餐类型：</dt>
+        <dd>
+          <ul>
+            <li><a class="packageActive" href="javascript:;">10元</a></li>
+            <li><a href="javascript:;">30元</a></li>
+            <li><a href="javascript:;">50元</a></li>
+            <li><a href="javascript:;">70元</a></li>
+            <li><a href="javascript:;">100元</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>选号中心：</dt>
+        <dd>
+          <form class="form-inline">
+            <div data-toggle="distpicker">
+              <div class="form-group">
+                <label class="sr-only" for="province1">Province</label>
+                <select class="form-control" id="province1"></select>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="city1">City</label>
+                <select class="form-control" id="city1"></select>
+              </div>
+              <!--<div class="form-group">
+                <label class="sr-only" for="district1">District</label>
+                <select class="form-control" id="district1"></select>
+              </div>-->
+            </div>
+          </form>
+        </dd>
+      </dl>
+      <dl class="numberAss">
+        <dt>号码类型：</dt>
+        <dd>
+          <ul>
+            <li><a class="carActive" href="javascript:;">全部</a></li>
+            <li><a href="javascript:;">AAAA</a></li>
+            <li><a href="javascript:;">AAA</a></li>
+            <li><a href="javascript:;">尾号8</a></li>
+            <li><a href="javascript:;">尾号6</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <a class="checkCarpro" href="javascript:;">&lt; 查看卡类介绍</a>
+    </div>
+    <div class="numberListMenu">
+      <span class="numberListTit">号码列表</span>
+      <div class="numSearch">
+        <input type="number" class="numberKey" placeholder="输入2-4位数字">
+        <a class="numSearchBtn" href="javascript:;"></a>
+      </div>
+      <a class="update" href="javascript:;">换一组</a>
+    </div>
+    <div class="numberList">
+      <ul>
+        <li>
+          <span class="numChoise">170 5199 1234</span>
+          <span class="numMoney">10元</span>
+          <span class="includeMoney">含话费：10元</span>
+        </li>
+        <li>
+          <span class="numChoise">170 5199 2345</span>
+          <span class="numMoney">20元</span>
+          <span class="includeMoney">含话费：20元</span>
+        </li>
+        <li>
+          <span class="numChoise">170 5199 3456</span>
+          <span class="numMoney">30元</span>
+          <span class="includeMoney">含话费：30元</span>
+        </li>
+        <li>
+          <span class="numChoise">170 5199 4567</span>
+          <span class="numMoney">50元</span>
+          <span class="includeMoney">含话费：50元</span>
+        </li>
+        <li>
+          <span class="numChoise">170 5199 2120</span>
+          <span class="numMoney">30元</span>
+          <span class="includeMoney">含话费：30元</span>
+        </li>
+        <li>
+          <span class="numChoise">170 5199 2120</span>
+          <span class="numMoney">30元</span>
+          <span class="includeMoney">含话费：30元</span>
+        </li>
+        <li>
+          <span class="numChoise">170 5199 2120</span>
+          <span class="numMoney">30元</span>
+          <span class="includeMoney">含话费：30元</span>
+        </li>
+        <li>
+          <span class="numChoise">170 5199 2120</span>
+          <span class="numMoney">30元</span>
+          <span class="includeMoney">含话费：30元</span>
+        </li>
+        <li>
+          <span class="numChoise">170 5199 2120</span>
+          <span class="numMoney">30元</span>
+          <span class="includeMoney">含话费：30元</span>
+        </li>
+        <li>
+          <span class="numChoise">170 5199 2120</span>
+          <span class="numMoney">30元</span>
+          <span class="includeMoney">含话费：30元</span>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+      <!--<div id="page" class="page_div"></div>-->
+      <div class="nextBtn">
+        <input type="button" id="nextStepBtn" value="下一步">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <span>Copyright©1999-2017  中国移动  版权所有</span>
+  <span>中华人民共和国增值电信业务经营许可证  经营许可证编号：A2.B1.B2-20100001</span>
+  <span>京ICP备05002571号</span>
+</div>
+<script src="../../js/common/jquery.js"></script>
+<!--<script src="../../js/common/paging.js"></script>-->
+<script src="../../js/common/distpicker.data.js"></script>
+<script src="../../js/common/distpicker.js"></script>
+<!--<script src="../../js/common/main.js"></script>-->
+<script>
+  // 点击已选卡类
+  function selectedCard() {
+    $(".menu .carAss li a").click(function () {
+      $(".menu .carAss li a").removeClass();
+      $(this).addClass("carActive");
+      // 选定一个卡类之后的ajax局部刷新页面
+      $.ajax({
+        url:"",
+        type:"",
+        data:{
+          cardType:$(this).text(),
+        },
+        success:function () {
+
+        }
+      });
+    });
+  }
+  selectedCard();
+  // 点击套餐类型
+  function packageAct() {
+    $(".menu .setMeal li a").click(function () {
+      $(".menu .setMeal li a").removeClass();
+      $(this).addClass("packageActive");
+      console.log($(this).text());
+      // 选定一个套餐类型之后的ajax局部刷新页面
+      /*$.ajax({
+        url:"",
+        type:"",
+        data:{
+          pkgType:$(this).text(),
+        },
+        success:function () {
+
+        }
+      });*/
+    });
+  }
+  packageAct();
+  // 点击号码类型
+  function numberType() {
+    $(".menu .numberAss li a").click(function () {
+      $(".menu .numberAss li a").removeClass();
+      $(this).addClass("numberType");
+      console.log($(this).text());
+      // 选定一个号码类型之后的ajax局部刷新页面
+      /*$.ajax({
+        url:"",
+        type:"",
+        data:{
+          pkgType:$(this).text(),
+        },
+        success:function () {
+
+        }
+      });*/
+    });
+  };
+  numberType();
+  // 把列表中的电话号码放在页面中间
+  function numberCenter() {
+    var li =  $(".numberList ul li");
+    for(var i = 0;i < li.length;i++){
+      if(i % 5 == 4){
+        $(".numberList ul li").eq(i).css("marginRight","0");
+      }
+    }
+  }
+  numberCenter();
+  // 点击选中号码列表
+  function activeCenter() {
+    $(".numberList li").click(function () {
+      $(".numberList li").css("border","1px solid #e6e6e6");
+      $(".numberList li").find("span").css("color","#888");
+      $(".numberList li").find("span.numMoney").css("color","#198bd4");
+      $(".numberList li").removeAttr("name");
+      $(this).css("border","1px solid #4ca5fc");
+      $(this).find("span.numChoise").css("color","#4ca5fc");
+      $(this).find("span.numMoney").css("color","#f8a53b");
+      $(this).find("span.includeMoney").css("color","#4ca5fc");
+      $(this).attr("name","1");
+    });
+  }
+  activeCenter();
+  // 输入2-4位数字搜索对应的号码
+  $(".numSearchBtn").click(function () {
+    // 在输入的值不属于2-4位的时候，提示用户
+    if($(".numberKey").val().length < 2 || $(".numberKey").val().length > 4){
+      console.log("请输入正确的数字");
+      $(".numSearch").append("<span class='tips'>"+"请输入2-4位数字"+"</span>");
+    }else{  // 输入了正确的值，发送请求后台数据
+      // 提示清除
+      $("span.tips").remove();
+      console.log("搜索中");
+      /*$.ajax({
+        url:"",
+        type:"",
+        data:{aaa:$(".numberKey").val()},
+        success:function () {
+
+        }
+      });*/
+    }
+  });
+  // 点击换一组
+  $(".update").click(function () {
+    console.log("换一组");
+    $.ajax({
+      url:"",
+      data:{},
+      success:function () {
+
+      }
+    });
+  });
+  // 点击下一步
+  $("#nextStepBtn").click(function () {
+    var activeLi = $(".numberList ul li");
+    // 假设没有选中一个特定的号码
+    var flag = false;
+    // 存储第几个被选中
+    var index;
+    for(var i = 0;i < activeLi.length;i++){
+      if(activeLi.eq(i).attr("name")){
+        flag = true;
+        index = i;
+        // 储存被选的手机号码和资费到本地
+        localStorage.numChoise = activeLi.eq(i).find("span.numChoise").text();
+        localStorage.numMoney = activeLi.eq(i).find("span.numMoney").text();
+        //console.log("有name这个属性");
+      }
+    }
+    // 有选择一个特定的号码，进行下一步
+    if(flag){
+      //console.log("可以进行下一步");
+      window.location.href = "跳转地址";
+      /*$.ajax({
+        url:"",
+        type:"",
+        data:{},
+        success:function (data) {
+          console.log(data);
+        }
+      });*/
+    }else{
+      // 提示用户选择一个特定的号码
+      console.log("请选择一个号码");
+    }
+  });
+  //分页
+  /*$("#page").paging({
+    pageNo:5,
+    totalPage: 9,
+    totalSize: 300,
+    callback: function(num) {
+      console.log(num);
+    }
+  })*/
+</script>
+</body>
+</html>

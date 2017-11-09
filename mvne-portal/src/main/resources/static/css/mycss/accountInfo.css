@@ -1,0 +1,678 @@
+/*公共部分*/
+/*左侧导航栏*/
+.navs{
+  padding-bottom: 90px;
+  width: 212px;
+  height: 792px;
+  background-color: #fff;
+}
+.navs > ul{
+  width: 100%;
+  padding: 20px 10px;
+}
+.navs > ul > p{
+  display: block;
+  width: 192px;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  height: 40px;
+  font-family: ﻿MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #000000;
+  border-bottom: #eef1f2 1px solid;
+  font-weight: bold;
+}
+.navs > ul > li{
+  padding-left: 35px;
+  font-family: ﻿PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 49px;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+.navs > ul > li > a:link{
+  text-decoration: none;
+  color: #666666;
+}
+.navs > ul > li > a:visited{
+  text-decoration: none;
+  color: #198bd4;
+}
+.navs > ul > li > a:hover{
+  text-decoration: none;
+  color: #198bd4;
+}
+.navs > ul > li > a:active{
+  text-decoration: none;
+  color: #198bd4;
+}
+/*我的账单*/
+body {
+  background-color: #ecedee;
+}
+.content {
+  float: left;
+  margin-left: 10px;
+  padding: 22px 20px;
+  background-color: #fff;
+}
+.myAccount {
+  width: 918px;
+  height: 792px;
+}
+.myAccountTit i {
+  display: inline-block;
+  width: 4px;
+  height: 17px;
+  background-color: #4ca5fc;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.myAccountTit span {
+  font-size: 18px;
+  vertical-align: middle;
+  color: #000;
+  font-weight: bold;
+}
+.tips {
+  margin-top: 13px;
+  margin-bottom: 58px;
+  height: 46px;
+  line-height: 46px;
+  background-color: #fef2e1;
+  font-size: 14px;
+  color: #666;
+  padding-left: 24px;
+}
+.tips a {
+  color: #4ca5fc;
+}
+.tips span {
+  color:#4ca5fc;
+}
+.checkAccount {
+  color: #666;
+}
+.accountCon {
+  text-align: center;
+  margin: 0 auto;
+}
+.accountCon .accountFram {
+  float: left;
+  margin-top: 40px;
+  width: 118px;
+  height: 103px;
+  line-height: 83px;
+  border: 1px solid #94c9fd;
+  border-radius: 4px;
+  border-top: 16px solid #94c9fd;
+  margin-right: 28px;
+}
+.accountCon .accountFram i {
+  font-style: normal;
+  font-size: 50px;
+  color: #4ca5fc;
+}
+.accountCon .accountFram span {
+  font-size: 14px;
+  color: #999;
+}
+.mySpeciDate {
+  margin-top: 43px;
+}
+/*账单详情*/
+.accountDetails {
+  width: 1200px;
+}
+/*账单信息*/
+.customerInfo {
+  height: 263px;
+}
+.customerInfo .customerInfoLeft {
+  float: left;
+  padding: 68px 46px;
+  width: 50%;
+  height: 263px;
+  background-color: #edf6ff;
+  margin-right: 2px;
+}
+.customerInfo .customerInfoLeft p {
+  margin-bottom: 18px;
+  color: #666;
+}
+.customerInfo .customerInfoLeft span {
+  display: inline-block;
+  width: 64px;
+  margin-right: 4px;
+}
+.customerInfo .customerInfoLeft i {
+  font-style: normal;
+}
+.customerInfo .customerInfoRight {
+  float: left;
+  padding: 17px 27px;
+  width: 49%;
+  height: 263px;
+  background-color: #edf6ff;
+}
+.customerInfo .customerInfoRight .customerInfoRightTit {
+  font-size: 18px;
+  font-weight: bold;
+}
+.customerInfo .customerInfoRight .customerInfoDetails {
+  padding: 37px 42px;
+  color: #666;
+  font-weight: 600;
+}
+.customerInfo .customerInfoRight .customerInfoDetails div {
+  width: 300px;
+  margin-bottom: 8px;
+}
+.customerInfo .customerInfoRight .customerInfoDetails div.periodCost {
+  margin-top: 23px;
+}
+.customerInfo .customerInfoRight .customerInfoDetails span {
+  float: left;
+}
+.customerInfo .customerInfoRight .customerInfoDetails i {
+  float: right;
+  font-style: normal;
+}
+.customerInfo .customerInfoRight .customerInfoDetails i.bigFont {
+  font-size: 18px;
+}
+.customerInfo .customerInfoRight .customerInfoDetails i.bigFont u {
+  font-style: normal;
+  text-decoration: none;
+  color: #fd716a;
+}
+/*账户信息*/
+.accountInfo {
+  float: left;
+  width: 543px;
+  margin-right: 70px;
+}
+.accountInfo .accountInfoTit {
+  margin-top: 75px;
+}
+.accountInfo .accountInfoTit span {
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+}
+.accountInfo .accountInfoTit a {
+  float: right;
+  color: #999;
+}
+.accountInfo table {
+  margin-top: 16px;
+  width: 543px;
+}
+.accountInfo table th {
+  text-align: center;
+  height: 40px;
+  background-color: #dbedfe;
+}
+.accountInfo table tr td {
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  height: 50px;
+  color: #666;
+}
+.accountInfo table tr td.boldFont {
+  font-weight: bold;
+  color: #333;
+}
+/*费用信息*/
+.costInfo {
+  float: left;
+  width: 543px;
+}
+.costInfo .costInfoTit {
+  margin-top: 75px;
+}
+.costInfo .costInfoTit span {
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+}
+.costInfo .costInfoTit a {
+  float: right;
+  color: #999;
+}
+.costInfo table {
+  width: 543px;
+  margin-top: 16px;
+}
+.costInfo table th {
+  text-align: center;
+  height: 40px;
+  background-color: #dbedfe;
+}
+.costInfo table tr td {
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  height: 50px;
+  color: #666;
+}
+.costInfo table tr td.boldFont {
+  font-weight: bold;
+  color: #333;
+}
+/*条形图*/
+.barChart {
+  float: left;
+  width: 50%;
+  margin-top: 75px;
+  margin-bottom: 67px;
+}
+.barChart .barChartTit {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+#barChart,#PIChart {
+  margin-top: 15px;
+  border: 1px solid #dadbdd;
+}
+/*饼状图*/
+.PIChart {
+  float: left;
+  margin-top: 75px;
+  margin-bottom: 67px;
+}
+.PIChart .PIChartTit {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+/*积分*/
+.integral .integralText {
+  margin-bottom: 20px;
+}
+.integral .integralText span {
+  font-size: 18px;
+  font-weight: bold;
+  /*vertical-align: middle;*/
+}
+.integral .integralText span i {
+  font-style: normal;
+  font-size: 26px;
+  color: #fbbc6b;
+  vertical-align: bottom;
+}
+.integral .integralText input {
+  margin-left: 43px;
+  width: 75px;
+  height: 36px;
+  background-color: #4ca5fc;
+  border-radius: 4px;
+  color: #fff;
+  border: 0 none;
+  font-size: 18px;
+}
+.integral .integralText a {
+  float: right;
+}
+.integral table {
+  width: 100%;
+  text-align: center;
+}
+.integral table thead th {
+  border:1px solid #dcdcdc;
+  text-align: center;
+  height: 40px;
+  background-color: #dbedfe;
+}
+.integral table tbody td {
+  height: 50px;
+  border: 1px solid #dcdcdc;
+}
+/*备注*/
+.remarks {
+  margin-top: 32px;
+  margin-bottom: 66px;
+  height: 70px;
+  background-color: #ececed;
+  padding: 17px 19px;
+}
+.remarks span.remarksTips {
+  float: left;
+}
+.remarks .remarksCon {
+  float: left;
+  margin-left: 24px;
+}
+.remarks .remarksCon a {
+  color: #4ca5fc;
+}
+/*我的详单*/
+h3.conTit {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 14px;
+}
+p.checkAccount span {
+  color: #4ca5fc;
+}
+h3.customCheck {
+  margin-top: 48px;
+}
+/*我的详单详情*/
+.myAccountTit {
+  padding: 0 10px 10px;
+  border-bottom: 1px solid #eef1f2;
+  margin-bottom: 30px;
+}
+.myAccountTit a {
+  float: right;
+}
+#speciFram {
+  width: 100%;
+  padding: 21px 36px;
+  height: 190px;
+}
+.classifyCheck .classifyCheckTit {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+.classifyCheck .classifyCheckLeft {
+  float: left;
+  margin-right: 20px;
+  width: 262px;
+  border: 1px solid #dcdcdc;
+  padding: 0 21px ;
+}
+.classifyCheck .classifyCheckLeft ul li {
+  padding-bottom: 15px;
+  padding-top: 17px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.classifyCheck .classifyCheckLeft ul li.lastLi {
+  border: 0 none;
+}
+.classifyCheck .classifyCheckLeft ul li span.checkMoney {
+  float: right;
+}
+.classifyCheck .classifyCheckLeft ul li p {
+  margin-top: 15px;
+}
+.classifyCheck .classifyCheckLeft ul li p a {
+  margin-right: 15px;
+}
+.classifyCheck .classifyCheckLeft ul li p a.active {
+  color: #69c8ff;
+}
+.classifyCheckRight {
+  padding: 27px 22px;
+  float: left;
+  width: 878px;
+  border: 1px solid #dcdcdc;
+}
+.classifyCheckRight h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+.classifyCheckRight table.packageMoney,.classifyCheckRight table.callRecord {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 36px;
+  border: 1px solid #dcdcdc;
+}
+.classifyCheckRight table.packageMoney thead,.classifyCheckRight table.callRecord thead {
+  background-color: #dbedfe;
+}
+.classifyCheckRight table.packageMoney thead th,.classifyCheckRight table.callRecord thead th {
+  height: 40px;
+  text-align: center;
+}
+.classifyCheckRight table.packageMoney tbody tr td,.classifyCheckRight table.callRecord tbody tr td {
+  height: 50px;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+}
+.classifyCheckRight table.packageMoney tbody tr td.fontBold,.classifyCheckRight table.callRecord tbody tr td.fontBold {
+  font-weight: bold;
+}
+/*账户余额详情*/
+.myAccountCon {
+  height: 185px;
+  background-color: #edf6ff;
+  padding: 23px 39px;
+  margin-bottom: 24px;
+}
+.myAccountCon h3 {
+  font-size: 48px;
+  margin: 22px 0;
+  color: #4ca5fc;
+}
+.myAccountCon .myAccountConInfo {
+  height: 64px;
+  line-height: 50px;
+  border-top: 1px solid #dbedfe;
+  width: 600px;
+}
+.myAccountCon .myAccountConInfo span {
+  margin-right: 76px;
+}
+.customCheck {
+  margin-top: 48px;
+}
+.customCheck a {
+  display: inline;
+  float: left;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+.customCheck a p {
+  margin-top: 16px;
+}
+.accountTips {
+  margin-top: 30px;
+  background-color: #ececed;
+  padding: 25px 27px 35px 24px;
+}
+.accountTips p span {
+  color: #4ca5fc;
+}
+/*充值查询*/
+.queryData {
+  margin-bottom: 37px;
+  padding-left: 29px;
+}
+.queryData #rechargeStartDate,.queryData #rechargeStopDate,.mySpeciDate #speciStartDate,.mySpeciDate #speciStopDate {
+  width: 206px;
+  height: 36px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+  margin: 0 20px;
+  background: #fff url("../../img/querycheckbtn.png") 163px 0 no-repeat;
+}
+.queryData #queryBtn,.mySpeciDate #queryBtn {
+  width: 73px;
+  height: 36px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #4ca5fc;
+  border: 0 none;
+  font-size: 16px;
+}
+table.rechargetab {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+}
+table.rechargetab th {
+  height: 40px;
+  background-color: #edf6ff;
+  text-align: center;
+}
+table.rechargetab tbody tr {
+  height: 60px;
+  border: 1px solid #dcdcdc;
+}
+/*已办业务*/
+table.handleBusiness {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+}
+table.handleBusiness th {
+  text-align: center;
+  height: 40px;
+  background-color: #edf6ff;
+}
+table.handleBusiness tbody tr {
+  height: 70px;
+  text-align: center;
+}
+table.handleBusiness tbody tr td {
+  border: 1px solid #dcdcdc;
+
+}
+/*弹框*/
+.confirmFram,.successFram,.errorFram {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  left: 0px;
+  top: 0px;
+  z-index: 20;
+  filter: alpha(opacity=90);
+  opacity: 0.9 !important;
+}
+.confirmFram .framTips,.successFram .framTips,.errorFram .framTips {
+  width: 725px;
+  height: 435px;
+  z-index: 21;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-color: #fff;
+  margin:auto;
+  filter: alpha(opacity=100);
+  opacity: 1 !important;
+}
+.framTipsTit {
+  height: 100px;
+  line-height: 100px;
+  padding-left: 42px;
+  font-size: 28px;
+  color: #666;
+  border-bottom: 2px solid #00ffff;
+}
+.framTipsTit .closeBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  width: 27px;
+  height: 27px;
+  background: transparent url("../../img/close.png") 0 0 no-repeat;
+}
+.framTips .framTipsCon {
+  padding: 50px 0 0 228px;
+  font-size: 20px;
+}
+.framTips .framTipsCon li {
+  margin-bottom: 10px;
+}
+.framTips .framTipsCon li span {
+  margin-left: 44px;
+}
+.framTips .framTipsCon li span.activPostage {
+  color: #f9b25d;
+}
+.framTips #unsubBtn,.framTips #successBtn,.framTips #errorBtn {
+  height: 64px;
+  width: 100%;
+  background-color: #4ca5fc;
+  border: 0 none;
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.framTips .successImg,.framTips .errorImg {
+  text-align: center;
+  margin: 40px 0 30px 0;
+}
+.framTips .successTxt,.framTips .errorTxt {
+  text-align: center;
+  font-size: 20px;
+  color: #888;
+}
+.framTips .errorTxt {
+  margin-bottom: 20px;
+}
+.framTips .errorReason {
+  text-align: center;
+  color: #fe716a;
+}
+/*分页样式*/
+.page_div {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: "microsoft yahei";
+  color: #666666;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+/*
+ * 页数按钮样式
+ */
+.page_div a {
+  min-width: 30px;
+  height: 28px;
+  border: 1px solid #dce0e0!important;
+  text-align: center;
+  margin: 0 4px;
+  cursor: pointer;
+  line-height: 28px;
+  color: #666666;
+  font-size: 13px;
+  display: inline-block;
+}
+#firstPage,
+#lastPage {
+  width: 50px;
+  color: #4ca5fc;
+  border: 1px solid #4ca5fc!important;
+}
+#prePage,
+#nextPage {
+  width: 70px;
+  color: #4ca5fc;
+  border: 1px solid #4ca5fc!important;
+}
+.page_div .current {
+  background-color: #4ca5fc;
+  border-color: #4ca5fc;
+  color: #fff;
+}
+.totalPages {
+  margin: 0 10px;
+}
+.totalPages span,
+.totalSize span {
+  color: #4ca5fc;
+  margin: 0 5px;
+}
