@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>套餐使用情况</title>
+  <title>账户余额详情</title><link rel="shortcut icon" href="http://www.10086.cn/favicon.ico" type="images/x-icon">
+  <link rel="stylesheet" href="../../css/common/bootstrap.css">
+  <link rel="stylesheet" href="../../css/mycss/base.css">
+  <link rel="stylesheet" href="../../css/mycss/accountInfo.css">
+</head>
+<body>
+<!--公共头部-->
+<div class="header">
+  <div class="container">
+    <div class="logoBox">
+      <div class="logo"></div>
+    </div>
+    <ul class="headerNav">
+      <li class="firstPage"><a href="javascript:;">首页</a></li>
+      <li><a href="../numSelection/choose_package_new(1).html">选号入网</a></li>
+      <li><a href="javascript:;">网上营业厅</a></li>
+      <li><a href="javascript:;">服务与支持</a></li>
+    </ul>
+    <ul class="countNav">
+      <li class="searchFrame"><a class="searchBtn" href="javascript:;"></a></li>
+      <li class="accountFrame"><a class="account" href="javascript:;"></a></li>
+      <li><a class="personText" href="../personalCenter/personalInfo.html">个人中心</a></li>
+      <li><a class="quit" href="javascript:;">退出</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="nav navbar-left navs">
+    <!--个人资料-->
+    <ul class="navbar-left">
+      <p>个人资料</p>
+      <li><a href="numData.html"  data-ajax-update="#right-content" data-ajax-model="replace" data-ajax="true" data-ajax-begin=""  id="num">号码资料</a></li>
+      <li><a href="amendPasswrd.html" data-ajax-update="#right-content" data-ajax-model="replace" data-ajax="true" data-ajax-begin="" id="amendPassword" >修改服务密码</a></li>
+      <li><a href="resetPassword.html" data-ajax-update="#right-content" data-ajax-model="replace" data-ajax="true" data-ajax-begin="" id="resetPassword">重置服务密码</a></li>
+      <li><a href="amendPwProtect.html" data-ajax-update="#right-content" data-ajax-model="replace" data-ajax="true" data-ajax-begin=""  id="setPwProtect">设置密码保护</a></li>
+      <li><a href="addressManage.html" data-ajax-update="#right-content" data-ajax-model="replace" data-ajax="true" data-ajax-begin=""  id="addressManage">地址管理</a></li>
+    </ul>
+    <!--账号信息-->
+    <ul class="navbar-left">
+      <p>账户信息</p>
+      <li><a href="myCheck.html" id="myAccount">我的账单</a></li>
+      <li><a href="mySpecifications.html" id="mySpecif">我的详单</a></li>
+      <li class="actived"><a href="packageSituation.html" id="packageUse">套餐使用情况</a></li>
+      <li><a href="accountBalance.html" id="accountBalance">账户余额详情</a></li>
+      <li><a href="handleBusiness.html" id="handleBus">已办业务</a></li>
+    </ul>
+  </div>
+  <div class="content myAccount">
+    <div>
+      <div class="myAccountTit">
+        <i></i><span>套餐使用情况</span>
+      </div>
+      <div class="statisticsDate">
+        <h3>统计时间截止2017年8月14日</h3>
+        <div class="clearfix"></div>
+      </div>
+      <div class="usageTotal">
+        <div class="usage">
+          <h3>流量</h3>
+          <div class="usageCon">
+            <div>
+              <span>可用: <i>728M</i></span>
+              <span>已用： 272M</span>
+              <span>总量： 1000M</span>
+            </div>
+            <!--进度条-->
+            <div>
+              <div class="progress" style="border-radius: 10px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;border-radius: 10px">
+                  <span class="sr-only">60% Complete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="usageDetails">
+          <span>238元4G任我用套餐</span>
+          <div class="usageDetailsData">
+            <span>可用：328M</span>
+            <span>总量：500M</span>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="usageDetails">
+          <span>238元4G任我用套餐</span>
+          <div class="usageDetailsData">
+            <span>可用：328M</span>
+            <span>总量：500M</span>
+          </div>
+        </div>
+      </div>
+      <div class="usageTotal">
+        <div class="usage">
+          <h3>语音</h3>
+          <div class="usageCon">
+            <div>
+              <span>可用: <i>1000分钟</i></span>
+              <span>已用： 100分钟</span>
+              <span>总量： 100分钟</span>
+            </div>
+            <!--进度条-->
+            <div>
+              <div class="progress" style="border-radius: 10px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;border-radius: 10px">
+                  <span class="sr-only">60% Complete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="usageTotal">
+        <div class="usage">
+          <h3>语音</h3>
+          <div class="usageCon">
+            <div>
+              <span>可用: <i>1000分钟</i></span>
+              <span>已用： 100分钟</span>
+              <span>总量： 100分钟</span>
+            </div>
+            <!--进度条-->
+            <div>
+              <div class="progress" style="border-radius: 10px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;border-radius: 10px">
+                  <span class="sr-only">60% Complete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="copyright">
+  <span>Copyright©1999-2017  中国移动  版权所有</span>
+  <span>中华人民共和国增值电信业务经营许可证  经营许可证编号：A2.B1.B2-20100001</span>
+  <span>京ICP备05002571号</span>
+</div>
+</body>
+<script src="../../js/common/jquery-2.0.3.min.js"></script>
+</html>

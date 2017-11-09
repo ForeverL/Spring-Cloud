@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link rel="shortcut icon" href="http://www.10086.cn/favicon.ico" type="images/x-icon">
+  <link rel="stylesheet" href="../../css/common/bootstrap.css">
+  <link rel="stylesheet" href="../../css/mycss/base.css">
+  <link rel="stylesheet" href="../../css/mycss/index.css">
+</head>
+<body>
+<!--公共头部-->
+<div class="header">
+  <div class="container">
+    <div class="logoBox">
+      <div class="logo"></div>
+    </div>
+    <ul class="headerNav">
+      <li class="firstPage"><a class="active" href="index.html">首页</a></li>
+      <li><a href="../numSelection/choose_package_new(1).html">选号入网</a></li>
+      <li><a href="javascript:;">网上营业厅</a></li>
+      <li><a href="javascript:;">服务与支持</a></li>
+    </ul>
+    <ul class="countNav">
+      <li class="searchFrame"><a class="searchBtn" href="javascript:;"></a></li>
+      <li class="accountFrame"><a class="account" href="javascript:;"></a></li>
+    </ul>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="container">
+  <div class="content">
+    <!--首页banner-->
+    <div class="banner">
+      <div id="scrollPics">
+        <ul class="slider">
+          <li><img alt="" src="../../img/public/banner.png"/></li>
+          <li><img alt="" src="../../img/public/banner.png"/></li>
+          <li><img alt="" src="../../img/public/banner.png"/></li>
+        </ul>
+        <ul class="num">
+          <li class="on"></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!--左边小导航-->
+      <div class="bannerList">
+        <div class="bannerListCon">
+          <div class="bannerListTit">选号入网</div>
+          <ul>
+            <li><a href="">一类卡</a></li>
+            <li><a href="">二类卡</a></li>
+            <li><a href="">三类卡</a></li>
+            <li><a href="">三类卡</a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bannerListCon">
+          <div class="bannerListTit">选号入网</div>
+          <ul>
+            <li><a href="">一类卡</a></li>
+            <li><a href="">二类卡</a></li>
+            <li><a href="">三类卡</a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bannerListCon">
+          <div class="bannerListTit">选号入网</div>
+          <ul>
+            <li><a href="">一类卡</a></li>
+            <li><a href="">二类卡</a></li>
+            <li><a href="">三类卡</a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bannerListCon">
+          <div class="bannerListTit">选号入网</div>
+          <ul>
+            <li><a href="">一类卡</a></li>
+            <li><a href="">二类卡</a></li>
+            <li><a href="">三类卡</a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!--右边菜单导航和充值-->
+      <div class="bannerNav"></div>
+    </div>
+    <!--卡类推荐-->
+    <div class="cardRecommend">
+      <div class="cardRecommendTit">卡类推荐</div>
+      <div class="cardRecommendCon">
+        <a href="javascript">
+          <img src="../../img/public/Messenger.png" alt="">
+          <h3>一类卡</h3>
+          <p>每月超大流量10G，费用仅需20元/月</p>
+        </a>
+        <a href="javascript">
+          <img src="../../img/public/Messenger-Copy.png" alt="">
+          <h3>二类卡</h3>
+          <p>云端业务专享超大空间，专属高速下载通道</p>
+        </a>
+        <a href="javascript">
+          <img src="../../img/public/Messenger-Copy-2.png" alt="">
+          <h3>三类卡</h3>
+          <p>应用商城不限流量下载，百万视频随心看</p>
+        </a>
+      </div>
+    </div>
+    <!--精选业务-->
+    <div class="selectedBusiness">
+      <div class="selectedBusinessTit">精选业务</div>
+      <div id="scrollPicsBusiness">
+        <ul class="slider">
+          <li><img alt="" src="../../img/homePage/business1.png"/></li>
+          <li><img alt="" src="../../img/homePage/business2.png"/></li>
+          <li><img alt="" src="../../img/homePage/business3.png"/></li>
+          <li><img alt="" src="../../img/homePage/business1.png"/></li>
+          <li><img alt="" src="../../img/homePage/business2.png"/></li>
+          <li><img alt="" src="../../img/homePage/business3.png"/></li>
+        </ul>
+        <ul class="num">
+          <li class="on"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!--号码推荐-->
+    <div class="numRecommend"></div>
+  </div>
+</div>
+<div class="copyright">
+  <span>Copyright©1999-2017  中国移动  版权所有</span>
+  <span>中华人民共和国增值电信业务经营许可证  经营许可证编号：A2.B1.B2-20100001</span>
+  <span>京ICP备05002571号</span>
+</div>
+<script src="../../js/common/jquery-2.0.3.min.js"></script>
+<script>
+  $(function () {
+    // 首页banner
+    function carousel() {
+      var len = $("#scrollPics .num > li").length;
+      var index = 0;  //图片序号
+      var adTimer;
+      $("#scrollPics .num li").mouseover(function() {
+        index = $("#scrollPics .num li").index(this);  //获取鼠标悬浮 li 的index
+        showImg(index);
+      }).eq(0).mouseover();
+      //滑入停止动画，滑出开始动画.
+      $('#scrollPics').hover(function() {
+        clearInterval(adTimer);
+      }, function() {
+        adTimer = setInterval(function() {
+          showImg(index)
+          index++;
+          if (index == len) {       //最后一张图片之后，转到第一张
+            index = 0;
+          }
+        }, 3000);
+      }).trigger("mouseleave");
+    }
+    carousel();
+    function showImg(index) {
+      var adWidth = $("#scrollPics>ul>li:first").width();
+      $("#scrollPics .slider").stop(true, false).animate({
+        "marginLeft": -adWidth * index + "px"    //改变 marginTop 属性的值达到轮播的效果
+      }, 1000);
+      $("#scrollPics .num li").removeClass("on")
+        .eq(index).addClass("on");
+    }
+    // 精选业务
+    function carouselBusiness() {
+      var len = $("#scrollPicsBusiness .num > li").length;
+      var index = 0;  //图片序号
+      var adTimer;
+      $("#scrollPicsBusiness .num li").mouseover(function() {
+        index = $("#scrollPicsBusiness .num li").index(this);  //获取鼠标悬浮 li 的index
+        showImg(index);
+      }).eq(0).mouseover();
+      //滑入停止动画，滑出开始动画.
+      $('#scrollPicsBusiness').hover(function() {
+        clearInterval(adTimer);
+      }, function() {
+        adTimer = setInterval(function() {
+          showImgBusiness(index)
+          index++;
+          if (index == len) {       //最后一张图片之后，转到第一张
+            index = 0;
+          }
+        }, 3000);
+      }).trigger("mouseleave");
+    }
+    carouselBusiness();
+    function showImgBusiness(index) {
+      var adWidth = $("#scrollPicsBusiness>ul>li:first").width();
+      $("#scrollPicsBusiness .slider").stop(true, false).animate({
+        "marginLeft": -adWidth * index + "px"    //改变 marginTop 属性的值达到轮播的效果
+      }, 1000);
+      $("#scrollPicsBusiness .num li").removeClass("on")
+        .eq(index).addClass("on");
+    }
+  });
+</script>
+</body>
+</html>

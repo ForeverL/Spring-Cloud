@@ -91,7 +91,6 @@ table {
   display: block;
   width: 0;
   height: 0;
-  /*visibility:hidden;*/
 }
 /*a*/
 a {
@@ -121,7 +120,7 @@ a:hover {
 .header .logoBox .logo {
   width: 116px;
   height: 65px;
-  background: transparent url("../../img/LOGO.png") center no-repeat;
+  background: transparent url("../../img/public/LOGO.png") center no-repeat;
 }
 .header ul.headerNav,
 .header ul.countNav {
@@ -173,12 +172,12 @@ a:hover {
 .header ul.countNav li a.searchBtn {
   width: 20px;
   height: 20px;
-  background: transparent url("../../img/search.png") center no-repeat;
+  background: transparent url("../../img/public/search.png") center no-repeat;
 }
 .header ul.countNav li a.account {
   width: 37px;
   height: 37px;
-  background: transparent url("../../img/account.png") center no-repeat;
+  background: transparent url("../../img/public/account.png") center no-repeat;
 }
 
 /*版权部分*/
