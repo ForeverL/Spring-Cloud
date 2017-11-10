@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title>个人资料</title>
+		<link rel="shortcut icon" href="http://www.10086.cn/favicon.ico"  type="images/x-icon">
+		<link rel="stylesheet" href="../../css/common/bootstrap.css" />
+		<link rel="stylesheet" href="../../css/mycss/public.css" />
+		<link rel="stylesheet" href="../../css/common/blue.css" />
+		<link rel="stylesheet" href="../../css/mycss/personalCenter_lq.css" />
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--头部-->
+		 <div class="header">
+		  	<div class="container">
+		    <div class="logoBox">
+		      <div class="logo"></div>
+		    </div>
+		    <!--<ul class="headerNav">
+		      <li class="firstPage"><a href="javascript:;">首页</a></li>
+		      <li><a class="active" href="javascript:;">选号入网</a></li>
+		      <li><a href="javascript:;">网上营业厅</a></li>
+		      <li><a href="javascript:;">服务与支持</a></li>
+		    </ul>-->
+		    <ul class="countNav">
+		      <li class="searchFrame"><a class="searchBtn" href="javascript:;"></a></li>
+		      <li class="accountFrame"><a class="account" href="javascript:;"></a></li>
+		        <li><a class="personText" href="personalInfo.html">个人中心</a></li>
+		      <li><a class="quit" href="javascript:;">退出</a></li>
+		    </ul>
+		    </div>
+		  </div>
+		  <div class="clearfix"></div>
+		  <!--主体部分-->
+		  <div class="content">
+		  	<div class="container">
+		  		<!--左侧导航栏-->
+		  		<div class="nav navbar-left navs">
+		  			<!--个人资料-->
+		  			<ul class="navbar-left">
+		  			    <p>个人资料</p>
+		  				    <li><a href="numData.html"   id="num">号码资料</a></li>
+			  				<li class="actived"><a href="javascript:;" id="amendPassword" >修改服务密码</a></li>
+			  				<li><a href="resetPassword.html"  id="resetPassword">重置服务密码</a></li>
+			  				<li><a href="amendPwProtect.html" id="setPwProtect">设置密码保护</a></li>
+			  				<li><a href="addressManage.html"  id="addressManage">地址管理</a></li>
+			  			</ul>
+		  			<!--账号信息-->
+		  			<ul class="navbar-left">
+		  			    <p>账户信息</p>
+						<li><a href="../accountInfo/myCheck.html" id="myAccount">我的账单</a></li>
+						<li><a href="../accountInfo/mySpecifications.html" id="mySpecif">我的详单</a></li>
+						<li><a href="../accountInfo/packageSituation.html" id="packageUse">套餐使用情况</a></li>
+						<li><a href="../accountInfo/accountBalance.html" id="accountBalance">账户余额详情</a></li>
+						<li><a href="../accountInfo/handleBusiness.html" id="handleBus">已办业务</a></li>
+		  			</ul>
+		  		</div>
+						  	<!--修改密码页-->
+				<div id="right-content" class="right-content">
+					<div class="numHeader">
+						<p><img src="../../img/personalCenter/stick.png" class="vm" alt=""/><span class="ml10 f-size18 #000 vm">修改服务资料</span></p>
+					</div>
+					<div class="numtitle pt30 pb20">
+						<p class="f-size14 colora4">服务密码是客户身份识别代码，由一组0-9的任一阿拉伯数字组成的8位数密码，客户凭服务密码可以通过各汇道查询或办理业务。</p>
+					</div>
+					<div class="amendInfoBody"> 
+						<form id="amendPwForm">
+						<div class="amendInfoDiv">
+							<label for="name">手机号码:</label><span id="phone">1390888888</span>
+						</div>
+						<div class="amendInfoDiv">
+							<label for="name">原始密码：</label><input id="originalPw" type="password" name="password" class="form-control inblock" placeholder="请输入原始的服务密码"/>
+						</div>	
+						<div class="amendInfoDiv"> 
+							<label for="name">新密码：</label><input id="newPw" type="password" name="password" class="form-control inblock" placeholder="由6位数字组成"/>
+						</div>		
+						<div class="amendInfoDiv">
+							<label for="name">确认密码：</label><input id="comfirmPw" type="password"  name="checkPassword" class="form-control inblock" placeholder=" 请再次输入新密码"/>
+						</div>	
+						</form>
+					</div>
+					<div class=" amendInfobutton">
+						<div class="marginAuto width145">
+						<button class="button next amendPassword"><span class="f-size16 colorfe">保存</span></button>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+
+		  	</div>
+		  </div>
+	<div class="footer">
+		<p>Copyright©1999-2017  中国移动  版权所有</p>
+		<p>中华人民共和国增值电信业务经营许可证  经营许可证编号：A2.B1.B2-20100001</p>
+		<br/>
+		<p>京ICP备05002571号</p>
+	</div>
+	<script type="text/javascript" src="../../js/common/common.js" ></script>
+	<script type="text/javascript" src="../../js/common/icheck.js" ></script>
+	<script type="text/javascript" src="../../js/personalCenter/amendPassword.js" ></script>
+	</body>
+</html>

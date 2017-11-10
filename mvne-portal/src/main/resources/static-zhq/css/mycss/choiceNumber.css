@@ -1,0 +1,496 @@
+/*选号入网首页*/
+.content .hd {
+  margin-top: 61px;
+  text-align: center;
+}
+.content .hd ul {
+  margin: 0 auto;
+  width: 264px;
+  height: 62px;
+  border-radius: 6px;
+}
+.content .hd ul li {
+  cursor: pointer;
+  float: left;
+  font-size: 20px;
+  width: 132px;
+  height: 62px;
+  line-height: 62px;
+}
+.content .hd ul li.tariffIntro {
+  border-radius: 6px 0 0 6px;
+  background-color: #198bd4;
+  color: #fff;
+}
+.content .hd ul li.tariffIntroright {
+  background-color: #fff;
+  border: 1px solid #198bd4;
+  color: #198bd4;
+}
+.content .hd ul li.useRule {
+  border-radius: 0 6px 6px 0;
+  background-color: #fff;
+  border: 1px solid #198bd4;
+  color: #198bd4;
+}
+.content .hd ul li.useRuleright {
+  background-color: #198bd4;
+  color: #fff;
+}
+.content .bd {
+  margin-top: 47px;
+}
+.content .bd ul.tariffIntroCon {
+  margin-bottom: 97px;
+}
+.content .bd ul.tariffIntroCon th {
+  width: 400px;
+  height: 62px;
+  text-align: center;
+  background-color: #e7f5ff;
+}
+.content .bd ul.tariffIntroCon tr {
+  text-align: center;
+  height: 70px;
+  font-size: 20px;
+}
+/*首页导航*/
+.content .contentNav a {
+  color: #666;
+}
+.content .contentNav a:hover {
+  text-decoration: none;
+}
+/*顺序部分*/
+.content .order {
+  text-align: center;
+}
+.content .order .orderImg {
+  height: 150px;
+  background: transparent url("../../img/numSelection/1.png") center no-repeat;
+}
+.content .order .orderImg2 {
+  height: 150px;
+  background: transparent url("../../img/numSelection/2.png") center no-repeat;
+}
+.content .menu {
+  padding-top: 12px;
+  height: 237px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  position: relative;
+}
+.content .menu dl {
+  height: 55px;
+  margin-bottom: 0;
+  margin-left: 27px;
+}
+.content .menu dl dt {
+  float: left;
+  font-weight:normal;
+  margin-right: 30px;
+  line-height: 50px;
+}
+.content .menu dl dd {
+  margin-left: 30px;
+  line-height: 50px;
+}
+.content .menu dl dd ul {
+  margin: 0;
+}
+.content .menu dl dd ul li {
+  margin: 0 10px;
+  float: left;
+  width: 72px;
+  text-align: center;
+}
+.content .menu dl dd ul li a {
+  display: inline-block;
+  color: #666;
+}
+/*选中状态的时候变化*/
+.content .menu dl dd ul li a.carActive {
+  width: 72px;
+  height: 32px;
+  border-radius: 16px;
+  border: solid 1px #4ca5fc;
+  text-align: center;
+  line-height: 32px;
+  color: #4ca5fc;
+}
+.content .menu dl dd ul li a.packageActive {
+  width: 72px;
+  height: 32px;
+  border-radius: 16px;
+  border: solid 1px #4ca5fc;
+  text-align: center;
+  line-height: 32px;
+  color: #4ca5fc;
+}
+.content .menu dl dd ul li a.numberType {
+  width: 72px;
+  height: 32px;
+  border-radius: 16px;
+  border: solid 1px #4ca5fc;
+  text-align: center;
+  line-height: 32px;
+  color: #4ca5fc;
+}
+.content .menu dl dd ul li a:visited {
+  text-decoration: none;
+}
+.content .menu dl dd ul li a:hover {
+  text-decoration: none;
+}
+.content .menu dl dd ul li a:active {
+  text-decoration: none;
+}
+.content .menu a.checkCarpro {
+  position: absolute;
+  right: 26px;
+  top: 26px;
+  color: #f8a53b;
+}
+.content .menu a.checkCarpro:hover {
+  text-decoration: none;
+}
+
+.content .numberListMenu {
+  margin: 19px 0 14px 0;
+  height: 48px;
+  line-height: 48px;
+  background-color: #e7f5ff;
+}
+.content .numberListMenu span.numberListTit {
+  float: left;
+  margin: 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.content .numberListMenu .numSearch {
+  position: relative;
+  float: left;
+}
+.content .numberListMenu .numSearch input {
+  width: 317px;
+  height: 29px;
+  margin-right: 12px;
+  border: 1px solid #c3c3c3;
+  border-radius: 15px;
+  padding-left: 14px;
+}
+.content .numberListMenu .numSearch span.tips {
+  color: rgba(255, 21, 21, 0.96);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+.content .numberListMenu .numSearch a {
+  display: block;
+  position: absolute;
+  left: 284px;
+  top: 16px;
+  width: 20px;
+  height: 20px;
+  background-color: hotpink;
+  background: transparent url("../../img/numSelection/search.png") center no-repeat;
+}
+.content .numberListMenu a.update {
+  float: right;
+  margin-right: 13px;
+  margin-top: 9px;
+  width: 95px;
+  height: 29px;
+  line-height: 29px;
+  padding-left: 20px;
+  border-radius: 14.5px;
+  background-color: #ffffff;
+  border: solid 1px #4ca5fc;
+  color: #4ca5fc;
+  background: transparent url("../../img/numSelection/refresh.png") 68px 8px no-repeat;
+}
+.content .numberListMenu a.update:hover {
+  text-decoration: none;
+  color: #4ca5fc;
+}
+
+.content .numberList ul li {
+  cursor: pointer;
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  width: 215px;
+  height: 46px;
+  border: 1px solid #e6e6e6;
+}
+.content .numberList ul li span {
+  display: block;
+  text-align: center;
+}
+.content .numberList ul li span.numChoise {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+}
+.content .numberList ul li span.includeMoney {
+  margin-top: 8px;
+  color: #888;
+}
+.content .numberList .nextBtn {
+  text-align: center;
+  margin: 30px 0 77px 0;
+}
+.content .numberList .nextBtn input {
+  width: 145px;
+  height: 41px;
+  border: 0 none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #4ca5fc;
+}
+/*选号码确认*/
+.content .chiosecar {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 88px;
+}
+.content .chiosecar .chiosecarleft {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 61px;
+}
+.content .chiosecar .chiosecarleft .carClassImg {
+  width: 139px;
+  height: 141px;
+  background: transparent url("../../img/public/Messenger.png") center no-repeat;
+  background-size: 100%;
+}
+.content .chiosecar .chiosecarright {
+  vertical-align: middle;
+  display: inline-block;
+}
+.content .chiosecar .chiosecarright h4 {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #666;
+}
+.content .chiosecar .chiosecarright h4 span {
+  color: #f8a53b;
+}
+.content .chiosecar .chiosecarright p {
+  text-align: left;
+  margin: 20px 0 0 0;
+}
+.content .chiosecar .chiosecarright p.carPrice {
+  text-indent: 2em;
+}
+/*套餐表格*/
+.content .carInfo table {
+  width: 1160px;
+  height: 184px;
+}
+.content .carInfo table th {
+  text-align: center;
+  height: 50px;
+  background-color: #e7f5ff;
+  font-weight: 200;
+}
+.content .carInfo table th.mouthPack {
+  width: 146px;
+}
+.content .carInfo table th.packageInclude {
+  width: 448px;
+}
+.content .carInfo table th.overtop {
+  width: 443px;
+}
+.content .carInfo table th.otherPack {
+   width: 166px;
+}
+.content .carInfo table tr td {
+  text-align: center;
+}
+.content .payFor {
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 93px;
+}
+.content .payFor p {
+  display: inline-block;
+  margin: 0;
+  color: #666;
+}
+.content .payFor p span {
+  color: #fd716a;
+}
+.content .payFor .payForBtn {
+  display: inline-block;
+}
+.content .payFor .payForBtn input {
+  width: 145px;
+  height: 41px;
+  border-radius: 4px;
+}
+.content .payFor .payForBtn input.laststep {
+  margin-left: 85px;
+  color: #4ca5fc;
+  background-color: #fff;
+  border: 2px solid #4ca5fc;
+}
+.content .payFor .payForBtn input.nextstep {
+  margin-left: 27px;
+  color: #fff;
+  background-color: #4ca5fc;
+  border: 0 none;
+}
+/*实名认证部分*/
+.content .checkInfo {
+  margin-left: 160px;
+  color: #666;
+}
+.content .checkInfo label {
+  display: block;
+}
+.content .checkInfo p.biddingerName {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.content .checkInfo p.IDnumber {
+  display: inline-block;
+  text-indent: 1em;
+  margin-bottom: 24px;
+}
+.content .checkInfo p.sendCert {
+  display: inline-block;
+  vertical-align: top;
+}
+.content .checkInfo #biddinger,
+.content .checkInfo #IDnumberIn {
+  width: 293px;
+  height: 36px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: solid 1px #b5b7bb;
+}
+.content .checkInfo .certFrame {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #b5b7bb;
+  padding: 17px 21px 20px 17px;
+}
+.content .checkInfo .certFrame .certFrameTit {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #b5b7bb;
+}
+.content .checkInfo .certFrame .imgUpdate {
+  height: 200px;
+}
+.content .checkInfo .certFrame .imgUpdate div {
+  float: left;
+  margin-right: 30px;
+}
+.content .checkInfo .certFrame .imgUpdate span {
+  display: block;
+  margin: 16px 0 10px;
+}
+.content .checkInfo .certFrame .imgUpdate div.facePhoto ,
+.content .checkInfo .certFrame .imgUpdate div.conPhoto ,
+.content .checkInfo .certFrame .imgUpdate div.handlePhoto {
+  position: relative;
+  overflow: hidden;
+}
+#imgOne,#imgOnea,#imgOneb {
+  width: 192px;
+  height: 112px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#imgPre,#imgPrea,#imgPreb {
+  float: left;
+  width: 192px;
+  height: 112px;
+  z-index: 999;
+}
+.imgBg {
+  width: 192px;
+  height: 112px;
+  position: relative;
+}
+.content .checkInfo .certFrame p {
+  color: #888;
+}
+
+
+
+/*轮播图*/
+#scrollPics{
+  height: 640px;
+  width: 1140px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position:relative;
+}
+.num{
+  position:absolute;
+  left:33%;
+  top:0;
+}
+.slider {
+  margin-top: 160px;
+  width: 5100px;
+  height: 460px;
+}
+.slider li {
+  float: left;
+  position: relative;
+}
+.slider li a {
+  font-size: 30px;
+  position: absolute;
+  bottom: 100px;
+  left: 110px;
+  display: inline-block;
+  width: 283px;
+  height: 67px;
+  border-radius: 6px;
+  line-height: 67px;
+  text-align: center;
+  background-color: #198bd4;
+  color: #fff;
+}
+#scrollPics .num li {
+  float: left;
+  margin-right: 70px;
+  text-align: center;
+  line-height: 16px;
+  width: 104px;
+  height: 140px;
+  cursor: pointer;
+  overflow: hidden;
+}
+#scrollPics .num li p {
+  margin-top: 10px;
+}
+#scrollPics .num li.on{
+  width: 104px;
+  height: 140px;
+  border: 0;
+  font-weight: bold;
+}
+/*选号码部分*/
+
+
+
+
+

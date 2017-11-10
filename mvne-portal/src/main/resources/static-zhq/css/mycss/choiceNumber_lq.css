@@ -1,0 +1,245 @@
+/*
+ author: lq  2017/10/12
+
+  单独样式
+ */
+
+
+@charset "utf-8";
+body{
+	background-color: #fff;
+}
+/*头部样式*/
+.header {
+  height: 100px;
+  font-size: 16px;
+  border-bottom: 1px solid #c5c5c5;
+}
+.header .logoBox {
+  margin-top: 14px;
+  height: 100px;
+  line-height: 100px;
+  float: left;
+}
+.header .logoBox .logo {
+  width: 161px;
+  height: 65px;
+  background: transparent url(../../img/numSelection/LOGO.png) center no-repeat;
+}
+.header ul.headerNav,
+.header ul.countNav {
+  line-height: 100px;
+}
+.header ul.headerNav li.firstPage {
+  margin-left: 20px;
+}
+.header ul.headerNav li {
+  float: left;
+  width: 95px;
+  margin-right: 20px;
+  text-align: center;
+}
+.header ul.headerNav li a {
+  display: block;
+  width: 95px;
+  height: 100px;
+  color: #666;
+}
+.header ul.headerNav li a.active,
+.header ul.countNav li a.active {
+  border-bottom: 4px solid #198bd4;
+}
+.header ul.headerNav li a:hover,
+.header ul.countNav li a:hover {
+  text-decoration:none;
+}
+.header ul.countNav {
+  float: right;
+  margin: 0;
+}
+.header ul.countNav li {
+  float: left;
+  margin-top: 32px;
+}
+.header ul.countNav li.searchFrame {
+  margin-top: 40px;
+  padding-right: 33px;
+  border-right: 1px solid #c3c3c3;
+}
+.header ul.countNav li.accountFrame {
+  padding-left: 28px;
+}
+.header ul.countNav li a {
+  color: #666;
+  display: block;
+}
+.header ul.countNav li a.searchBtn {
+  width: 20px;
+  height: 20px;
+  background: transparent url(../../img/numSelection/search.png) center no-repeat;
+}
+.header ul.countNav li a.account {
+  width: 37px;
+  height: 37px;
+  background: transparent url(../../img/numSelection/account.png) center no-repeat;
+}
+/*选号入网  配送信息——新用户*/
+.text{
+	font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    color: #999999;
+}
+.pro{
+    display: inline-block;
+}
+.proIndex{
+	width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin: auto;
+}
+.indexText{
+	color: #fff;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+}
+.line{
+	display: inline-block;
+    border-bottom: 1px #ccc dashed;
+    width: 10%;
+    position: relative;
+    top: -40px;
+    left: 0px;
+}
+.width520{
+	width:520px;
+}
+.borderb{
+	border-bottom:1px solid #dcdcdc;
+}
+.mtb90{
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+
+#tb_input label.error{
+	color: red;
+}
+
+label{
+	font-weight: normal;
+}
+select{
+	width: 135px;
+    height: 25px;
+    border: 1px solid #4ca5fc;
+    border-radius: 4px;
+}
+.mb180{
+	margin-bottom: 180px;
+}
+.ml88{
+	margin-left: 88px;
+}
+.ml15{
+	margin-left: 15px;
+}
+.nbutton{
+	background-color: #4ca5fc;
+	width: 145px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.pbutton{
+	background-color: #fff;
+	text-align: center;
+	width: 145px;
+    height: 45px;
+    border: 1px solid #4ca5fc;
+    line-height: 45px;
+    color: #4ca5fc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer{
+	width: 100%;
+	text-align: center;
+    color: #bdc3c7;
+    font-size: 14px;
+    padding: 30px 0;
+    border-top: 1px solid #ecedee;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+/*选号入网  配送信息——老用户*/
+
+.tables tr {
+	border: 1px solid #ccc;
+}
+.tables tbody tr:first-child{
+	background-color: #e7f5ff;
+}
+.tables tbody tr[class^=cheaked]:after{
+	content: "V";
+}
+.newAdd{
+	height: 45px;
+    width: 100px;
+    line-height: 45px;
+    border: 1px solid #4CA5FC;
+    color: #4CA5FC;
+    border-radius: 4px;
+    text-align: center;
+}
+.width1050{
+	width: 1050px;
+}
+/*支付*/
+.mt80{
+	margin-top: 80px;
+}
+.payContent{
+	width: 830px;
+    margin: auto;
+    border: 1px solid #ecedee;
+    padding: 45px 75px;
+}
+.case{
+	width: 164px;
+	height: 44px;
+	border-radius: 2px 2px 2px 2px;
+	border: solid 1px #e6eaef;
+	padding: 5px 10px;
+	margin-left: 30px;
+}
+.contents{
+	    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 20px 10px;
+}
+/*完成*/
+.mb15{
+	margin-bottom: 15px;
+}
+
+.mess{
+	border: 1px solid #b5b7bb;
+    padding: 60px 200px;
+}
+.tablse tr  td{
+	    border-top: none!important;
+}
