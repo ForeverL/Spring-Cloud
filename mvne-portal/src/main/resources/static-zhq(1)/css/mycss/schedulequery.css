@@ -1,0 +1,55 @@
+.contentNav a {
+  color: #666;
+}
+.container .content .scheduleTab {
+  font-size: 18px;
+  border-bottom: 1px solid #ecedee;
+  height: 45px;
+  line-height: 45px;
+}
+ul.scheduleTab li {
+  float: left;
+  margin-right: 45px;
+  font-weight: bold;
+  cursor: pointer;
+}
+ul.scheduleTab li.active {
+  color: #198bd4;
+  border-bottom: 4px solid #198bd4;
+}
+ul.scheduleTabCon li.infoQuery {
+  width: 774px;
+  height: 501px;
+  margin: 37px auto 0;
+  padding: 23px 0 0 0;
+  text-align: center;
+  border: 1px solid #ecedee;
+}
+ul.scheduleTabCon li.infoQuery label {
+  display: block;
+  margin-bottom: 37px;
+}
+ul.scheduleTabCon li.infoQuery label span {
+  display: inline-block;
+  /*width: 80px;*/
+  text-align: right;
+}
+ul.scheduleTabCon li.infoQuery label input {
+  width: 293px;
+  height: 36px;
+  padding-left: 10px;
+  border-radius: 6px;
+  border: 1px solid #b5b7bb;
+}
+ul.scheduleTabCon li.infoQuery label input#authNumber {
+
+}
+ul.scheduleTabCon li.infoQuery #queryBtn {
+  width: 145px;
+  height: 41px;
+  color: #fff;
+  background-color: #4ca5fc;
+  border: 0 none;
+  border-radius: 4px;
+  font-size: 16px;
+}
