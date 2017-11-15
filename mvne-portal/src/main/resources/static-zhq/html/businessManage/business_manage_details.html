@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>业务详情</title>
+  <link rel="shortcut icon" href="http://www.10086.cn/favicon.ico" type="images/x-icon">
+  <link rel="stylesheet" href="../../css/mycss/base.css">
+  <link rel="stylesheet" href="../../css/common/bootstrap.css">
+  <link rel="stylesheet" href="../../css/mycss/businessManage.css">
+</head>
+<body>
+<!--公共头部-->
+<div class="header">
+  <div class="container">
+    <div class="logoBox">
+      <div class="logo"></div>
+    </div>
+    <ul class="headerNav">
+      <li class="firstPage"><a href="javascript:;">首页</a></li>
+      <li><a href="javascript:;">选号入网</a></li>
+      <li><a class="active menu" href="javascript:;">网上营业厅<i></i></a></li>
+      <li><a href="javascript:;">服务与支持</a></li>
+    </ul>
+    <ul class="countNav">
+      <li class="searchFrame"><a class="searchBtn" href="javascript:;"></a></li>
+      <li class="accountFrame"><a class="account" href="javascript:;"></a></li>
+    </ul>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="container">
+  <div class="content">
+    <div class="contentNav">
+      <a href="javascript:;">首页</a> > <a href="javascript:;">网上营业厅</a> > <a href="javascript:;">业务办理</a> > <a href="javascript:;">来电显示</a>
+    </div>
+    <div>
+      <div class="detailCon">
+        <div class="detailImg"></div>
+        <div class="detailInfo">
+          <div class="detailInfoTit">
+            <h2>来电显示</h2>
+            <p><span>￥0 </span>/月</p>
+          </div>
+          <a href="javascript:;" class="service">
+            <img src="../../img/businessManage/service.png" alt="">
+            <p>客服</p>
+          </a>
+          <div class="clearfix"></div>
+          <dl class="cardDl">
+            <dt>适用卡类：</dt>
+            <dd>一类卡</dd>
+            <dd>二类卡</dd>
+            <dd>三类卡</dd>
+          </dl>
+          <div class="clearfix"></div>
+          <dl>
+            <dt>适用地市：</dt>
+            <dd>全省</dd>
+          </dl>
+          <div class="clearfix"></div>
+          <dl>
+            <dt>商品信息：</dt>
+            <dd>来电显示功能（即主叫显示），当接听电话时，来电者的号码将显
+              示在电话屏幕上。</dd>
+          </dl>
+          <dl>
+            <dt>生效时间：</dt>
+            <dd>办理后的当天生效</dd>
+          </dl>
+          <div class="clearfix"></div>
+          <div class="btnfunction">
+            <input id="handleBtn" type="button" value="立即办理">
+            <a href="javascript:;">
+              <i class="fabulousIcon"></i>
+              <span>赞(268)</span>
+            </a>
+            <a href="javascript:;">
+              <i class="shareIcon"></i>
+              <span>分享</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="businessDetailsIntroduce">
+        <ul class="tabTit">
+          <li>业务介绍</li>
+          <li class="active">资费标准</li>
+          <li>办理方式</li>
+          <li>温馨提示</li>
+        </ul>
+        <div class="clearfix"></div>
+        <ul class="tabCon">
+          <li style="display: none">1212</li>
+          <li class="standard">
+            <table>
+              <thead>
+                <th>套餐价格</th>
+                <th>套餐内流量</th>
+                <th>语音计费</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10</td>
+                  <td>500M</td>
+                  <td rowspan="5">主叫0.1元/分钟<br >
+                    接听免费</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>1G</td>
+                </tr>
+                <tr>
+                  <td>50</td>
+                  <td>3G</td>
+                </tr>
+                <tr>
+                  <td>70</td>
+                  <td>10G</td>
+                </tr>
+                <tr>
+                  <td>100</td>
+                  <td>20G</td>
+                </tr>
+                <tr>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li style="display: none">42412</li>
+          <li style="display: none">133414</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <span>Copyright©1999-2017 中国移动 版权所有</span> <span>中华人民共和国增值电信业务经营许可证
+			经营许可证编号：A2.B1.B2-20100001</span> <span>京ICP备05002571号</span>
+</div>
+<script src="../../js/common/jquery-2.0.3.min.js"></script>
+<script src="../../js/common/paging.js"></script>
+<script>
+  $(function () {
+    $(".tabTit li").click(function () {
+      var index = $(this).index();
+      $(this).addClass("active").siblings().removeClass("active");
+      $(this).parent().parent().find("ul.tabCon li").eq(index).show().siblings().hide();
+    });
+  });
+</script>
+</body>
+</html>
