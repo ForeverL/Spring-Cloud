@@ -35,39 +35,41 @@
     </div>
     <div>
       <div class="detailCon">
-        <div class="detailImg"></div>
-        <div class="detailInfo">
-          <div class="detailInfoTit">
-            <h2>来电显示</h2>
-            <p><span>￥0 </span>/月</p>
+        <div class="detailImg clearfix"></div>
+        <div class="detailInfo clearfix">
+          <div class="detailInfoTop clearfix">
+            <div class="detailInfoTit">
+              <h2>来电显示</h2>
+              <p><span>￥0 </span>/月</p>
+            </div>
+            <a href="javascript:;" class="service">
+              <img src="../../img/businessManage/service.png" alt="">
+              <p>客服</p>
+            </a>
           </div>
-          <a href="javascript:;" class="service">
-            <img src="../../img/businessManage/service.png" alt="">
-            <p>客服</p>
-          </a>
-          <div class="clearfix"></div>
-          <dl class="cardDl">
-            <dt>适用卡类：</dt>
-            <dd>一类卡</dd>
-            <dd>二类卡</dd>
-            <dd>三类卡</dd>
-          </dl>
-          <div class="clearfix"></div>
-          <dl>
-            <dt>适用地市：</dt>
-            <dd>全省</dd>
-          </dl>
-          <div class="clearfix"></div>
-          <dl>
-            <dt>商品信息：</dt>
-            <dd>来电显示功能（即主叫显示），当接听电话时，来电者的号码将显
-              示在电话屏幕上。</dd>
-          </dl>
-          <dl>
-            <dt>生效时间：</dt>
-            <dd>办理后的当天生效</dd>
-          </dl>
-          <div class="clearfix"></div>
+          <div class="detailInfoDetails clearfix">
+            <dl class="cardDl clearfix">
+              <dt>适用卡类：</dt>
+              <dd>
+                <span>一类卡</span>
+                <span>二类卡</span>
+                <span>三类卡</span>
+              </dd>
+            </dl>
+            <dl class="cityDl clearfix">
+              <dt>适用地市：</dt>
+              <dd>全省</dd>
+            </dl>
+            <dl class="goodsDl clearfix">
+              <dt>商品信息：</dt>
+              <dd>来电显示功能（即主叫显示），当接听电话时，来电者的号码将显示在电话屏幕上。</dd>
+            </dl>
+            <dl class="timeDl clearfix">
+              <dt>生效时间：</dt>
+              <dd>办理后的当天生效</dd>
+            </dl>
+          </div>
+
           <div class="btnfunction">
             <input id="handleBtn" type="button" value="立即办理">
             <a href="javascript:;">
@@ -83,16 +85,15 @@
       </div>
       <div class="clearfix"></div>
       <div class="businessDetailsIntroduce">
-        <ul class="tabTit">
+        <ul class="clearfix tabTit">
           <li>业务介绍</li>
           <li class="active">资费标准</li>
           <li>办理方式</li>
           <li>温馨提示</li>
         </ul>
-        <div class="clearfix"></div>
         <ul class="tabCon">
           <li style="display: none">1212</li>
-          <li class="standard">
+          <li class="clearfix standard">
             <table>
               <thead>
                 <th>套餐价格</th>
@@ -138,15 +139,71 @@
   <span>Copyright©1999-2017 中国移动 版权所有</span> <span>中华人民共和国增值电信业务经营许可证
 			经营许可证编号：A2.B1.B2-20100001</span> <span>京ICP备05002571号</span>
 </div>
+<!--确定弹框-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips">
+    <div class="framTipsTit">
+      <span>请您确认以下信息</span>
+      <span class="closeBtn"></span>
+    </div>
+    <ul class="framTipsCon">
+      <li><p>您的号码:<span>18793020392</span></p></li>
+      <li><p>办理业务:<span>来电提醒</span></p></li>
+      <li><p>资费标准:<span class="activPostage">￥10/月</span></p></li>
+      <li><p>注意事项:<span>办理后当天生效</span></p></li>
+    </ul>
+    <input id="unsubBtn" type="button" value="确认办理">
+  </div>
+</div>
+<!--办理提示-->
+<div class="confirmFram tipsFram" style="display: none">
+  <div class="framTips">
+    <ul class="framDetailsTipsCon">
+      <li><p>您已办理过“来电显示”，此业务不可重复办理。</p></li>
+      <li><p>谢谢您的支持！</p></li>
+    </ul>
+    <input id="tipsBtn" type="button" value="确定">
+  </div>
+</div>
+<!--办理成功弹框-->
+<div class="successFram" style="display: none">
+  <div class="framTips">
+    <div class="successImg">
+      <img src="../../img/accountInfo/successBg.png" alt="">
+    </div>
+    <p class="successTxt">您已成功办理了<span>"来电提醒"</span>业务！</p>
+    <input id="successBtn" type="button" value="确定">
+  </div>
+</div>
+<!--办理失败弹框-->
+<div class="errorFram" style="display: none">
+  <div class="framTips">
+    <div class="errorImg">
+      <img src="../../img/accountInfo/errorBg.png" alt="">
+    </div>
+    <p class="errorTxt"><span>"来电提醒"</span>业务办理失败，请您稍候再试！</p>
+    <p class="errorReason">失败原因:系统故障</p>
+    <input id="errorBtn" type="button" value="确定">
+  </div>
+</div>
 <script src="../../js/common/jquery-2.0.3.min.js"></script>
 <script src="../../js/common/paging.js"></script>
 <script>
   $(function () {
+    // 点击tab切换
     $(".tabTit li").click(function () {
       var index = $(this).index();
       $(this).addClass("active").siblings().removeClass("active");
       $(this).parent().parent().find("ul.tabCon li").eq(index).show().siblings().hide();
     });
+    // 确认信息弹框
+    $(".closeBtn").on("click",function () {
+      $(".confirmFram").css("display","none");
+    });
+    // 点击确定退订
+    $("#unsubBtn").on("click",function () {
+      $(".successFram").css("display","block");
+    })
   });
 </script>
 </body>

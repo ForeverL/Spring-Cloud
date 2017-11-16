@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
   <title>首页</title>
   <link rel="shortcut icon" href="http://www.10086.cn/favicon.ico" type="images/x-icon">
   <link rel="stylesheet" href="../../css/common/bootstrap.css">
   <link rel="stylesheet" href="../../css/mycss/base.css">
   <link rel="stylesheet" href="../../css/mycss/index.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
 <!--公共头部-->
@@ -68,17 +74,18 @@
   <div class="content">
     <!--首页banner-->
     <div class="banner">
-      <div id="scrollPics">
-        <ul class="slider">
-          <li><img alt="" src="../../img/public/banner.png"/></li>
-          <li><img alt="" src="../../img/public/banner.png"/></li>
-          <li><img alt="" src="../../img/public/banner.png"/></li>
+      <div id="js_banner" class="fx_banner">
+        <ul id="js_banner_img" class="fx_banner_img clear">
+          <li><img src="../../img/public/banner.png" alt=""></li>
+          <li><img src="../../img/public/banner.png" alt=""></li>
+          <li><img src="../../img/public/banner.png" alt=""></li>
+          <li><img src="../../img/public/banner.png" alt=""></li>
+          <li><img src="../../img/public/banner.png" alt=""></li>
         </ul>
-        <ul class="num">
-          <li class="on"></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <div class="fx_banner_common fx_grid_c1">
+          <a ytag="30000" id="js_banner_pre" href="javascript:;" class="fx_banner_pre"></a>
+          <a ytag="30010" id="js_banner_next" href="javascript:;" class="fx_banner_next"></a>
+        </div>
       </div>
       <!--左边小导航-->
       <div class="bannerList">
@@ -369,6 +376,7 @@
   <span>京ICP备05002571号</span>
 </div>
 <script src="../../js/common/jquery-2.0.3.min.js"></script>
+<script src="../../js/common/tab.js"></script>
 <script src="../../js/homePage/homePage.js"></script>
 </body>
 </html>

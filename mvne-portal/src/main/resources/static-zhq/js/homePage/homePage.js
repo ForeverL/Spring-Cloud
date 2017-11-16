@@ -1,37 +1,22 @@
 $(function () {
   // 首页banner
   function carousel() {
-    var len = $("#scrollPics .num > li").length;
-    var index = 0;  //图片序号
-    var adTimer;
-    $("#scrollPics .num li").mouseover(function() {
-      index = $("#scrollPics .num li").index(this);  //获取鼠标悬浮 li 的index
-      showImg(index);
-    }).eq(0).mouseover();
-    //滑入停止动画，滑出开始动画.
-    $('#scrollPics').hover(function() {
-      clearInterval(adTimer);
-    }, function() {
-      adTimer = setInterval(function() {
-        showImg(index)
-        index++;
-        if (index == len) {       //最后一张图片之后，转到第一张
-          index = 0;
-        }
-      }, 3000);
-    }).trigger("mouseleave");
+    var $window = $(window), window_width = $window.width() - 180;
+    $('#js_banner, #js_banner_img li').width(window_width);
+    new $.Tab({
+      target: $('#js_banner_img li'),
+      effect: 'slide3d',
+      animateTime: 1000,
+      stay: 3500,
+      autoPlay: true,
+      merge: true,
+      prevBtn: $('#js_banner_pre'),
+      nextBtn: $('#js_banner_next')
+    });
   }
   carousel();
-  function showImg(index) {
-    var adWidth = $("#scrollPics>ul>li:first").width();
-    $("#scrollPics .slider").stop(true, false).animate({
-      "marginLeft": -adWidth * index + "px"    //改变 marginTop 属性的值达到轮播的效果
-    }, 1000);
-    $("#scrollPics .num li").removeClass("on")
-      .eq(index).addClass("on");
-  }
   // 精选业务
-  function carouselBusiness() {
+  /*function carouselBusiness() {
     var len = $("#scrollPicsBusiness .num > li").length;
     var index = 0;  //图片序号
     var adTimer;
@@ -60,7 +45,7 @@ $(function () {
     }, 1000);
     $("#scrollPicsBusiness .num li").removeClass("on")
       .eq(index).addClass("on");
-  }
+  }*/
 
   // 号码推荐
   $("ul.numClass li").on("click",function () {
