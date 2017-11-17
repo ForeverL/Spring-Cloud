@@ -55,9 +55,9 @@
     <ul class="countNav countNavHome">
       <li class="searchFrame countNavLi">
         <a class="searchInput" href="javascript:;">
-          <i class="search"></i><input type="text">
+          <i class="search"></i><input id="searchIpt" type="text" placeholder="实名">
         </a>
-        <ul style="display: none">
+        <ul class="historyRecord" style="display: none">
           <li>实名验证</li>
           <li>身份证验证</li>
         </ul>
@@ -180,28 +180,33 @@
     </div>
     <!--卡类推荐-->
     <div class="cardRecommend">
-      <div class="cardRecommendTit">卡类推荐</div>
+      <div class="cardRecommendTit">
+        <h3>卡类推荐</h3>
+      </div>
       <div class="cardRecommendCon">
-        <a href="javascript">
+        <a href="javascript:;">
           <img src="../../img/public/Messenger.png" alt="">
           <h3>一类卡</h3>
           <p>每月超大流量10G，费用仅需20元/月</p>
         </a>
-        <a href="javascript">
+        <a href="javascript:;">
           <img src="../../img/public/Messenger-Copy.png" alt="">
           <h3>二类卡</h3>
           <p>云端业务专享超大空间，专属高速下载通道</p>
         </a>
-        <a href="javascript">
+        <a href="javascript:;">
           <img src="../../img/public/Messenger-Copy-2.png" alt="">
           <h3>三类卡</h3>
           <p>应用商城不限流量下载，百万视频随心看</p>
         </a>
       </div>
     </div>
+    <div class="clearfix"></div>
     <!--精选业务-->
     <div class="selectedBusiness">
-      <div class="selectedBusinessTit">精选业务</div>
+      <div class="selectedBusinessTit">
+        <h3>精选业务</h3>
+      </div>
       <div id="scrollPicsBusiness">
         <ul class="slider">
           <li><img alt="" src="../../img/homePage/business1.png"/></li>
@@ -223,12 +228,26 @@
     </div>
     <!--号码推荐-->
     <div class="numRecommend">
-      <div class="numRecommendTit">号码推荐</div>
+      <div class="numRecommendTit">
+        <h3>号码推荐</h3>
+      </div>
       <div class="numRecommendCon">
         <ul class="numClass">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
+          <li class="active">
+            <h3>一类卡</h3>
+            <p>超大流量套餐，上网无忧</p>
+            <span class="firstCard"></span>
+          </li>
+          <li>
+            <h3>二类卡</h3>
+            <p style="display: none">超大流量套餐，上网无忧</p>
+            <span style="display: none" class="firstCard"></span>
+          </li>
+          <li>
+            <h3>三类卡</h3>
+            <p style="display: none">超大流量套餐，上网无忧</p>
+            <span style="display: none" class="firstCard"></span>
+          </li>
         </ul>
         <div class="numList">
           <ul class="numListUl">
@@ -322,6 +341,10 @@
               <h3>13908888888</h3>
               <p>￥100</p>
             </li>
+            <li>
+              <h3>13908888888</h3>
+              <p>￥100</p>
+            </li>
           </ul>
           <ul class="numListUl" style="display: none">
             <li>
@@ -366,6 +389,7 @@
             </li>
           </ul>
         </div>
+        <div class="clearfix"></div>
       </div>
     </div>
   </div>

@@ -53,8 +53,8 @@
 }
 
 .fx_banner {
-  background: #f0f0f0;
-  width: 1170px;
+  background: #fff;
+  width: 1070px;
   overflow: hidden;
   position: relative;
 }
@@ -164,7 +164,7 @@
   opacity: 80;
   color: #fff;
   padding: 0 14px 0 15px;
-  
+  filter: alpha(opacity=80);
 }
 .banner .bannerList .bannerListCon {
   border-bottom: 1px solid #3d3f4b;
@@ -295,8 +295,22 @@
   color: #fff;
 }
 /*卡类推荐*/
-.cardRecommend {
+.cardRecommend,.numRecommend,.selectedBusiness {
   text-align: center;
+}
+.cardRecommend .cardRecommendTit,.numRecommend .numRecommendTit,.selectedBusiness .selectedBusinessTit {
+  font-size: 20px;
+  color: #333;
+  margin-top: 34px;
+  text-align: center;
+}
+.cardRecommend .cardRecommendTit h3,.numRecommend .numRecommendTit h3,.selectedBusiness .selectedBusinessTit h3 {
+  margin: 0 auto;
+  border-bottom: 3px solid #333;
+  font-weight: bold;
+  padding-bottom: 9px;
+  width: 80px;
+  margin-bottom: 32px;
 }
 .cardRecommend .cardRecommendCon a {
   float: left;
@@ -367,19 +381,45 @@
 }
 
 /*号码推荐*/
+.numRecommendCon {
+  margin-bottom: 74px;
+}
 .numRecommendCon ul.numClass {
   float: left;
 }
 .numRecommendCon ul.numClass li {
+  padding: 16px 0 0 26px;
   width: 240px;
   height: 54px;
   cursor: pointer;
   background-color: #eff2f5;
   border: solid 1px #dcdcdc;
+  text-align: left;
+  z-index: 888;
+}
+.numRecommendCon ul.numClass li h3 {
+  font-size: 20px;
+}
+.numRecommendCon ul.numClass li p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #999;
+}
+.numRecommendCon ul.numClass span.firstCard {
+  display: inline-block;
+  margin: 32px 0 0 76px;
+  width: 119px;
+  height: 114px;
+  background: transparent url("../../img/homePage/cardBg.png") center 0 no-repeat;
+}
+.numRecommendCon ul.numClass img.seccendCard {
+   position: absolute;
+   bottom: -75px;
+   right: 17px;
 }
 .numRecommendCon ul.numClass li.active {
   height: 215px;
-  background-color: hotpink;
+  background-color: #fff;
 }
 .numList {
   /*float: left;*/

@@ -171,6 +171,9 @@ a:hover {
   padding-right: 33px;
   border-right: 1px solid #c3c3c3;
 }
+.header ul.countNav li.searchFrame a.searchInput i.search {
+  cursor: pointer;
+}
 .header ul.countNav li a.searchBtn {
   /*display: inline-block;*/
   width: 20px;

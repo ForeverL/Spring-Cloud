@@ -1,7 +1,7 @@
 $(function () {
   // 首页banner
   function carousel() {
-    var $window = $(window), window_width = $window.width() - 180;
+    var $window = $(window), window_width = $window.width() - 340;
     $('#js_banner, #js_banner_img li').width(window_width);
     new $.Tab({
       target: $('#js_banner_img li'),
@@ -15,6 +15,11 @@ $(function () {
     });
   }
   carousel();
+  // 点击搜索
+  $("#searchIpt").click(function () {
+    $(".historyRecord").show();
+    event.stopPropagation();
+  });
   // 精选业务
   /*function carouselBusiness() {
     var len = $("#scrollPicsBusiness .num > li").length;
@@ -50,6 +55,8 @@ $(function () {
   // 号码推荐
   $("ul.numClass li").on("click",function () {
     var index = $(this).index();
+    $(this).siblings().find("p").hide().stop().parent().find("span").hide();
+    $(this).find("p").show().stop().parent().find("span").show();
     $(this).parent().next().find(".numListUl").hide().eq(index).show();
     $(this).addClass("active").siblings().removeClass("active");
   });
@@ -63,5 +70,6 @@ $(function () {
   // 点击其他地方弹框隐藏
   $(document).click(function(){
     $(".shopFram").hide();
+    $(".historyRecord").hide();
   });
 });
