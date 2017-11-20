@@ -74,19 +74,6 @@
   <div class="content">
     <!--首页banner-->
     <div class="banner">
-      <div id="js_banner" class="fx_banner">
-        <ul id="js_banner_img" class="fx_banner_img clear">
-          <li><img src="../../img/public/banner.png" alt=""></li>
-          <li><img src="../../img/public/banner.png" alt=""></li>
-          <li><img src="../../img/public/banner.png" alt=""></li>
-          <li><img src="../../img/public/banner.png" alt=""></li>
-          <li><img src="../../img/public/banner.png" alt=""></li>
-        </ul>
-        <div class="fx_banner_common fx_grid_c1">
-          <a ytag="30000" id="js_banner_pre" href="javascript:;" class="fx_banner_pre"></a>
-          <a ytag="30010" id="js_banner_next" href="javascript:;" class="fx_banner_next"></a>
-        </div>
-      </div>
       <!--左边小导航-->
       <div class="bannerList">
         <div class="bannerListCon">
@@ -125,6 +112,20 @@
             <li><a href="">三类卡</a></li>
           </ul>
           <div class="clearfix"></div>
+        </div>
+      </div>
+      <!--轮播图-->
+      <div id="js_banner" class="fx_banner">
+        <ul id="js_banner_img" class="fx_banner_img clear">
+          <li><img src="../../img/public/banner.png" alt="" width=659 height=460 ></li>
+          <li><img src="../../img/public/banner.png" alt="" width=659 height=460 ></li>
+          <li><img src="../../img/public/banner.png" alt="" width=659 height=460 ></li>
+          <li><img src="../../img/public/banner.png" alt="" width=659 height=460 ></li>
+          <li><img src="../../img/public/banner.png" alt="" width=659 height=460 ></li>
+        </ul>
+        <div class="fx_banner_common fx_grid_c1">
+          <a ytag="30000" id="js_banner_pre" href="javascript:;" class="fx_banner_pre"></a>
+          <a ytag="30010" id="js_banner_next" href="javascript:;" class="fx_banner_next"></a>
         </div>
       </div>
       <!--右边菜单导航和充值-->
@@ -178,6 +179,7 @@
         </div>
       </div>
     </div>
+    <div class="clearfix"></div>
     <!--卡类推荐-->
     <div class="cardRecommend">
       <div class="cardRecommendTit">
@@ -208,22 +210,26 @@
         <h3>精选业务</h3>
       </div>
       <div id="scrollPicsBusiness">
-        <ul class="slider">
-          <li><img alt="" src="../../img/homePage/business1.png"/></li>
-          <li><img alt="" src="../../img/homePage/business2.png"/></li>
-          <li><img alt="" src="../../img/homePage/business3.png"/></li>
-          <li><img alt="" src="../../img/homePage/business1.png"/></li>
-          <li><img alt="" src="../../img/homePage/business2.png"/></li>
-          <li><img alt="" src="../../img/homePage/business3.png"/></li>
-        </ul>
-        <ul class="num">
-          <li class="on"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <div id="wrapper">
+          <div id="carousel">
+            <ul>
+              <li><a href="javascript:;"><img src="../../img/homePage/business1.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business2.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business3.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business1.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business2.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business3.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business1.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business3.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business1.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business2.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business3.png" alt=""/></a></li>
+              <li><a href="javascript:;"><img src="../../img/homePage/business1.png" alt=""/></a></li>
+            </ul>
+            <div class="clearfix"></div>
+            <div id="pager" class="pager"></div>
+          </div>
+        </div>
       </div>
     </div>
     <!--号码推荐-->
@@ -401,6 +407,7 @@
 </div>
 <script src="../../js/common/jquery-2.0.3.min.js"></script>
 <script src="../../js/common/tab.js"></script>
+<script src="../../js/common/jquery.carouFredSel-6.0.4-packed.js"></script>
 <script src="../../js/homePage/homePage.js"></script>
 </body>
 </html>

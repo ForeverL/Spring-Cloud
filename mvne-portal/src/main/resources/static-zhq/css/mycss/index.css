@@ -47,14 +47,10 @@
   margin-right: 13px;
 }
 /*首页轮播图*/
-.fx_grid_c1 {
-  width: 990px;
-  margin: 0 auto;
-}
-
 .fx_banner {
+  float: left;
   background: #fff;
-  width: 1070px;
+  width: 670px;
   overflow: hidden;
   position: relative;
 }
@@ -71,7 +67,7 @@
 .fx_banner_img li {
   float: left;
   height: 460px;
-  width: 1170px;
+  width: 670px;
   position: relative;
 }
 
@@ -151,13 +147,8 @@
   background-color: hotpink;
 }
 /*banner*/
-.banner {
-  position: relative;
-}
 .banner .bannerList {
-  position: absolute;
-  top: 0;
-  left: 0;
+  float: left;
   width: 185px;
   height: 460px;
   background-color: rgba( 0, 0, 0, .8);
@@ -183,18 +174,12 @@
 }
 /*右边小菜单*/
 .banner .bannerNav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 9px 15px 0 15px;
-  margin-right: 14px;
+  float: left;
+  padding: 9px 10px 0 10px;
   margin-top: 19px;
   width: 296px;
   height: 421px;
   background: transparent url("../../img/homePage/rightBg.png") center no-repeat;
-}
-.banner .bannerNav ul.shortCut {
-
 }
 .banner .bannerNav ul.shortCut li {
   float: left;
@@ -337,47 +322,54 @@
 }
 
 /*精选业务轮播图*/
-#scrollPicsBusiness{
-  height: 240px;
-  width: 1126px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  position:relative;
+#wrapper {
+  width: 1120px;
+  height: 220px;
 }
-#scrollPicsBusiness .num{
-  position:absolute;
-  left:47%;
-  bottom: 30px;
-}
-#scrollPicsBusiness .slider {
-  width: 5100px;
-  height: 240px;
-}
-#scrollPicsBusiness .slider li {
-  float: left;
+#carousel {
+  width: 1120px;
   position: relative;
 }
-#scrollPicsBusiness .num li {
-  float: left;
+#carousel ul {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#carousel li {
+  font-size: 40px;
+  color: #999;
   text-align: center;
-  line-height: 16px;
-  width: 16px;
-  height: 16px;
-  border-radius: 10px;
-  background-color: #fff;
-  cursor: pointer;
+  display: block;
+  width: 337px;
+  height: 210px;
+  padding: 0;
+  float: left;
+  position: relative;
+  margin-right: 16px;
+}
+#carousel li img {
+  width: 337px;
+  height: 210px;
+  margin-top: 14px;
+}
+#carousel .pager {
+  text-align: center;
+  margin: 0 auto;
+}
+#carousel .pager a {
+  background: transparent url("../../img/homePage/carousel_control.png") no-repeat -2px -32px;
+  text-decoration: none;
+  text-indent: -999px;
+  display: inline-block;
   overflow: hidden;
-  margin-right: 10px;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px 0 0;
 }
-#scrollPicsBusiness .num li p {
-  margin-top: 10px;
-}
-#scrollPicsBusiness .num li.on {
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
-  border-radius: 10px;
-  background-color: #ff35e6;
+#carousel .pager a.selected {
+  background: transparent url("../../img/homePage/carousel_control.png") no-repeat -12px -32px;
+  text-decoration: underline;
 }
 
 /*号码推荐*/
@@ -386,6 +378,7 @@
 }
 .numRecommendCon ul.numClass {
   float: left;
+  border-top: 1px solid #dcdcdc;
 }
 .numRecommendCon ul.numClass li {
   padding: 16px 0 0 26px;
@@ -394,6 +387,7 @@
   cursor: pointer;
   background-color: #eff2f5;
   border: solid 1px #dcdcdc;
+  border-top: 0 none;
   text-align: left;
   z-index: 888;
 }
@@ -407,7 +401,7 @@
 }
 .numRecommendCon ul.numClass span.firstCard {
   display: inline-block;
-  margin: 32px 0 0 76px;
+  margin: 33px 0 0 76px;
   width: 119px;
   height: 114px;
   background: transparent url("../../img/homePage/cardBg.png") center 0 no-repeat;
@@ -420,12 +414,6 @@
 .numRecommendCon ul.numClass li.active {
   height: 215px;
   background-color: #fff;
-}
-.numList {
-  /*float: left;*/
-}
-.numList ul {
-  /*width: 940px;*/
 }
 .numList ul li {
   float: left;
