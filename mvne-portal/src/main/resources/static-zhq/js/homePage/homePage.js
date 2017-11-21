@@ -48,4 +48,20 @@ $(function () {
     $(".shopFram").hide();
     $(".historyRecord").hide();
   });
+  
+  
+  
+  // 点击图片上传按钮
+  $("#updownBtn").click(function () {
+    // 第一次上传图片
+    function firstImg() {
+      $.ajax({
+        url:"",
+        data:{},
+        success:function (data) {
+          console.log(data);
+        }
+      });
+    }
+  });
 });

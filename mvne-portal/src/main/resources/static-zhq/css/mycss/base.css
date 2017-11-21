@@ -102,6 +102,9 @@ a:hover {
   text-decoration: none;
 }
 
+.content {
+  width: 1150px;
+}
 
 /*公共头部页面*/
 .header {

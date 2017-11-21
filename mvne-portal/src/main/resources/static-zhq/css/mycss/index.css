@@ -92,8 +92,7 @@
 
 .fx_banner_common a {
   position: absolute;
-  top: 50%;
-  margin-top: -315px;
+  top: 170px;
   width: 41px;
   height: 119px;
   cursor: pointer;

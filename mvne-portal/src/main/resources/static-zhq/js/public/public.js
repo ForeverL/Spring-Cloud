@@ -1,6 +1,10 @@
-/**
- * Created by zhq on 2017/10/12.
- */
-var mySwiper = new Swiper('.swiper-container', {
-  autoplay: 5000,//可选选项，自动滑动
-})
+$(function () {
+  window.onresize = function () {
+    var win = $(window).width(),
+      body = $('body');
+    if(win < 1100){
+      // body.addClass('min-width');
+      console.log("124");
+    }
+  }
+});

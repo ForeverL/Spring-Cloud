@@ -393,7 +393,7 @@ input::-webkit-inner-spin-button{
 .content .checkInfo .certFrame .imgUpdate {
   height: 200px;
 }
-.content .checkInfo .certFrame .imgUpdate div {
+.content .checkInfo .certFrame .imgUpdate .imgUpdateFram {
   float: left;
   margin-right: 30px;
 }
@@ -401,9 +401,9 @@ input::-webkit-inner-spin-button{
   display: block;
   margin: 16px 0 10px;
 }
-.content .checkInfo .certFrame .imgUpdate div.facePhoto ,
-.content .checkInfo .certFrame .imgUpdate div.conPhoto ,
-.content .checkInfo .certFrame .imgUpdate div.handlePhoto {
+.content .checkInfo .certFrame .imgUpdate .facePhoto ,
+.content .checkInfo .certFrame .imgUpdate .conPhoto ,
+.content .checkInfo .certFrame .imgUpdate .handlePhoto {
   position: relative;
   overflow: hidden;
 }

@@ -278,14 +278,15 @@ body {
   text-decoration: none;
   color: #fd716a;
 }
+
+.accountTotalInfo {
+  padding-top: 75px;
+}
 /*账户信息*/
 .accountInfo {
   float: left;
   width: 543px;
   margin-right: 70px;
-}
-.accountInfo .accountInfoTit {
-  margin-top: 75px;
 }
 .accountInfo .accountInfoTit span {
   font-size: 18px;
@@ -321,7 +322,7 @@ body {
   width: 543px;
 }
 .costInfo .costInfoTit {
-  margin-top: 75px;
+  margin-bottom: 44px;
 }
 .costInfo .costInfoTit span {
   font-size: 18px;
@@ -334,7 +335,6 @@ body {
 }
 .costInfo table {
   width: 543px;
-  margin-top: 16px;
 }
 .costInfo table th {
   text-align: center;
@@ -684,8 +684,15 @@ table.handleBusiness tbody tr {
 }
 table.handleBusiness tbody tr td {
   border: 1px solid #dcdcdc;
-
 }
+table.handleBusiness tbody tr td a {
+  display: inline-block;
+  width: 60px;
+}
+table.handleBusiness tbody tr td a.unsub {
+  border-right: 1px solid #dcdcdc;
+}
+
 /*弹框*/
 .confirmFram,.successFram,.errorFram {
   position:fixed;
