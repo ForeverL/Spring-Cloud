@@ -422,6 +422,15 @@ input::-webkit-inner-spin-button{
   height: 112px;
   z-index: 999;
 }
+#subImgFirst,#subImgSeccond,#subImgThree {
+  margin: 10px 0 10px 56px;
+  width: 80px;
+  height: 36px;
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+}
 .imgBg {
   width: 192px;
   height: 112px;

@@ -48,31 +48,36 @@
         <p class="certFrameTit">您提供的身份信息将给予加密保护，保证此证件照仅用于办理本次入网业务</p>
         <div class="imgUpdate">
           <div class="imgUpdateFram">
-            <span>正面照：</span>
-            <div class="facePhoto">
-              <input type="file" multiple="true" name="imgOne" id="imgOne" />
-              <img id="imgPre" src="../../img/numSelection/imgBg.png" width="192px" height="112px" style="display: block;" />
-            </div>
-            <input id="subImgFirst" type="submit" value="上传图片">
+            <form id="saveFacePhoto" action="">
+              <span>正面照：</span>
+              <div class="facePhoto">
+                <input type="file" multiple="true" name="imgOne" id="imgOne" />
+                <img id="imgPre" src="../../img/numSelection/imgBg.png" width="192px" height="112px" style="display: block;" />
+              </div>
+              <input id="subImgFirst" type="submit" value="上传图片">
+            </form>
           </div>
           <div class="imgUpdateFram">
-            <span>反面照：</span>
-            <div class="conPhoto">
-              <input type="file" multiple="true" name="imgOnea" id="imgOnea"/>
-              <img id="imgPrea" src="../../img/numSelection/imgBg.png" width="192px" height="112px" style="display: block;" />
-            </div>
-            <input id="subImgSeccond" type="submit" value="上传图片">
+            <form id="saveConPhoto" action="">
+              <span>反面照：</span>
+              <div class="conPhoto">
+                <input type="file" multiple="true" name="imgOnea" id="imgOnea"/>
+                <img id="imgPrea" src="../../img/numSelection/imgBg.png" width="192px" height="112px" style="display: block;" />
+              </div>
+              <input id="subImgSeccond" type="submit" value="上传图片">
+            </form>
           </div>
           <div class="imgUpdateFram">
-            <span>手持照：</span>
-            <div class="handlePhoto">
-              <input type="file" multiple="true" name="imgOneb" id="imgOneb"/>
-              <img id="imgPreb" src="../../img/numSelection/imgBg.png" width="192px" height="112px" style="display: block;" />
-            </div>
-            <input id="subImgThree" type="submit" value="上传图片">
+            <form id="saveHandlePhoto" action="">
+              <span>手持照：</span>
+              <div class="handlePhoto">
+                <input type="file" multiple="true" name="imgOneb" id="imgOneb"/>
+                <img id="imgPreb" src="../../img/numSelection/imgBg.png" width="192px" height="112px" style="display: block;" />
+              </div>
+              <input id="subImgThree" type="submit" value="上传图片">
+            </form>
           </div>
         </div>
-        <!--<input type="file">-->
         <p>1、上传图片格式为jpg、jpeg、png，最大不超过600KB；文件上传越大，速度越慢，请耐心等待；
         <p>2、证件照必须与申办人一致，否则将无法通过实名审核，实名审核不通过的订单无法进行开户；</p>
         <p>3、请慎重提交，提交审核后将不能修改。</p>

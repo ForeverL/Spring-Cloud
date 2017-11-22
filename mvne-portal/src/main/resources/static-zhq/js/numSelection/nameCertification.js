@@ -50,6 +50,7 @@ $(function () {
     var file = document.getElementById("imgOne");
     formData.append('imgOne',file.files[0]);
     console.log(formData);
+    event.stopPropagation();
   });
   $("#imgOnea").change(function () {
     preImg(this.id,'imgPrea');
@@ -57,6 +58,7 @@ $(function () {
     var filea = document.getElementById("imgOne");
     formDataa.append('imgOne',filea.files[0]);
     console.log(formDataa);
+    event.stopPropagation();
   });
   $("#imgOneb").change(function () {
     preImg(this.id,'imgPreb');
@@ -64,6 +66,46 @@ $(function () {
     var file = document.getElementById("imgOne");
     formDatab.append('imgOne',file.files[0]);
     console.log(formDatab);
+    event.stopPropagation();
+  });
+  // 点击提交第一个上传图片按钮
+  $("#subImgFirst").click(function () {
+    // jquery 表单提交
+    $("#saveFacePhoto").ajaxSubmit({
+      // 对于表单提交成功后处理，message为提交页面saveReport.htm的返回内容
+      url: "",
+      data: {},
+      success:function (data) {
+        console.log(data);
+      }
+    });
+    return false; // 必须返回false，否则表单会自己再做一次提交操作，并且页面跳转
+  });
+  // 点击提交第二个上传图片按钮
+  $("#subImgSeccond").click(function () {
+    // jquery 表单提交
+    $("#saveConPhoto").ajaxSubmit({
+      // 对于表单提交成功后处理，message为提交页面saveReport.htm的返回内容
+      url: "",
+      data: {},
+      success:function (data) {
+        console.log(data);
+      }
+    });
+    return false; // 必须返回false，否则表单会自己再做一次提交操作，并且页面跳转
+  });
+  // 点击提交第三个上传图片按钮
+  $("#subImgThree").click(function () {
+  // jquery 表单提交
+    $("#saveHandlePhoto").ajaxSubmit({
+      // 对于表单提交成功后处理，message为提交页面saveReport.htm的返回内容
+      url: "",
+      data: {},
+      success:function (data) {
+        console.log(data);
+      }
+    });
+    return false; // 必须返回false，否则表单会自己再做一次提交操作，并且页面跳转
   });
   // 点击下一步
   $(".nextstep").click(function () {
