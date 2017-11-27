@@ -87,6 +87,7 @@ $(function () {
         type : "POST",
         data : JSON.stringify({
           //pkgType : $(this).text(),
+          //
         }),
         success : function(data) {
           console.log(data);
