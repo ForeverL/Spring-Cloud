@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title>个人资料</title>
+		<link rel="shortcut icon" href="http://www.10086.cn/favicon.ico"  type="images/x-icon">
+		<link rel="stylesheet" href="../../css/common/bootstrap.css" />
+		<link rel="stylesheet" href="../../css/mycss/public.css" />
+		<link rel="stylesheet" href="../../css/common/blue.css" />
+		<link rel="stylesheet" href="../../css/mycss/personalCenter_lq.css" />
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--头部-->
+		 <div class="header">
+		  	<div class="container">
+		    <div class="logoBox">
+		      <div class="logo"></div>
+		    </div>
+		    <ul class="headerNav">
+		      <li class="firstPage"><a href="javascript:;">首页</a></li>
+		      <li><a class="active" href="javascript:;">选号入网</a></li>
+					<li><a class="menu" href="javascript:;">网上营业厅<i></i></a></li>
+		      <li><a href="javascript:;">服务与支持</a></li>
+		    </ul>
+		    <ul class="countNav">
+		      <li class="searchFrame"><a class="searchBtn" href="javascript:;"></a></li>
+		      <li class="accountFrame"><a class="account" href="javascript:;"></a></li>
+		      <li><a class="personText" href="personal_info.html">个人中心</a></li>
+		      <li><a class="quit" href="javascript:;">退出</a></li>
+		    </ul>
+		    </div>
+		  </div>
+		  <div class="clearfix"></div>
+		  <!--主体部分-->
+		  <div class="content">
+		  	<div class="container">
+		  		<!--左侧导航栏-->
+		  		<div class="nav navbar-left navs">
+		  			<!--个人资料-->
+		  			<ul class="navbar-left">
+		  			    <p>个人资料</p>
+		  				<li><a href="num_data.html"   id="num">号码资料</a></li>
+		  				<li><a href="amend_passwrd.html"  id="amendPassword" >修改服务密码</a></li>
+		  				<li><a href="reset_password.html"  id="resetPassword">重置服务密码</a></li>
+		  				<li><a href="amend_pw_protect.html" id="setPwProtect">设置密码保护</a></li>
+		  				<li><a href="address_manage.html"  id="addressManage">地址管理</a></li>
+		  			</ul>
+		  			<!--账号信息-->
+		  			<ul class="navbar-left">
+		  			    <p>账户信息</p>
+						<li><a href="../accountInfo/myCheck.html" id="myAccount">我的账单</a></li>
+						<li><a href="../accountInfo/mySpecifications.html" id="mySpecif">我的详单</a></li>
+						<li><a href="../accountInfo/packageSituation.html" id="packageUse">套餐使用情况</a></li>
+						<li><a href="../accountInfo/accountBalance.html" id="accountBalance">账户余额详情</a></li>
+						<li><a href="../accountInfo/handleBusiness.html" id="handleBus">已办业务</a></li>
+		  			</ul>
+		  		</div>
+		  		<div class="right-content" id="right-content">
+		  			<!--右边头部-->
+		  			<div class="personHeader">
+		  				<img src="../../img/personalCenter/headPortrait.png" class="vm" alt=""/>
+		  				<div class="infoText">
+		  					<p  class="f-size18 color0"><span>13908888888</span>,<span class="showTime"></span></p>
+		  					<p><span class="mr5 ml5"><img src="../../img/personalCenter/edit.png" class="vm" alt=""/></span><a class="f-size16 colorf1 vm" href="amend_personalInfo.html"  class="block">修改资料</a></p>
+		  				</div>
+		  				<div class="floatr mt30">
+		  					  <img src="../../img/personalCenter/rightIncon.png" class="vm" alt=""/>
+		  				</div>
+		  				<div class="floatr mt10 mr50">
+		  					<p><span class="f-size16 color6">账户余额：</span><span class="f-size36 color3">100.00</span><span class="color0 f-size16">元</span></p>
+		  				</div>
+		  			</div>
+		  			<!--右边主体-->
+		  			<div class="personTitle">
+		  				<img src="../../img/personalCenter/stick.png" class="vm" alt=""/><span class="f-size18 color0 vm ml10">使用情况</span>
+		  				<a class="floatr f-size14 color76 cursor block"><span class="mr5">查看详情</span>></a>
+		  			</div>
+		  			<div class="personBody mt40">
+		  				<div class="row" style="height: 240px;">
+		  					<div class="col-lg-4">
+		  						<p class="f-size18 color6 text-center">流量</p>
+		  						<div id="flux" style="height: 210px; margin: 0 auto;width: 100%;">
+		  							
+		  						</div>
+		  					</div>
+		  					<div class="col-lg-4">
+		  						<p class="f-size18 color6 text-center">语音</p>
+		  						<div id="voice" style="height: 210px; margin: 0 auto;width: 100%;">
+		  							
+		  						</div>
+		  					</div>
+		  					<div class="col-lg-4">
+		  						<p class="f-size18 color6 text-center">WLAN</p>
+		  						<div id="wlan" style="height: 210px; margin: 0 auto;width: 100%;">
+		  							
+		  						</div>
+		  					</div>
+		  				</div>
+		  				<div class="row" style="height: 240px;">
+		  					<div class="col-lg-4">
+		  						<p class="f-size18 color6 text-center">短信</p>
+		  						<div id="message" style="height: 210px; margin: 0 auto;width: 100%;">
+		  							
+		  						</div>
+		  					</div>
+		  					<div class="col-lg-4">
+		  						<p class="f-size18 color6 text-center">彩信</p>
+		  						<div id="MMS" style="height: 210px; margin: 0 auto;width: 100%;">
+		  							
+		  						</div>
+		  					</div>
+		  					<div class="col-lg-4">
+		  					</div>
+		  				</div>
+		  			</div>
+		  			<div class="clearfix"></div>
+		  		</div>
+		  	</div>
+		  </div>
+	<div class="footer">
+		<p>Copyright©1999-2017  中国移动  版权所有</p>
+		<p>中华人民共和国增值电信业务经营许可证  经营许可证编号：A2.B1.B2-20100001</p>
+		<br/>
+		<p>京ICP备05002571号</p>
+	</div>
+	<script type="text/javascript" src="../../js/common/common.js" ></script>
+	<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	<script type="text/javascript" src="../../js/common/echarts.js" ></script>
+	<script type="text/javascript" src="../../js/common/icheck.js" ></script>
+	<script type="text/javascript" src="../../js/personalCenter/personalInfo.js" ></script>
+	</body>
+</html>

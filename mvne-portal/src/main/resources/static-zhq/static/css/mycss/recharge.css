@@ -1,0 +1,373 @@
+/*
+ author: lq  2017/11/13
+
+  单独样式
+ */
+@charset "utf-8";
+body{
+	background-color: #fff;
+}
+/*头部样式*/
+.header {
+  height: 100px;
+  font-size: 16px;
+  border-bottom: 1px solid #c5c5c5;
+}
+.header .logoBox {
+  margin-top: 14px;
+  height: 85px;
+  line-height: 100px;
+  float: left;
+}
+.header .logoBox .logo {
+  width: 161px;
+  height: 65px;
+  background: transparent url(../../img/numSelection/LOGO.png) center no-repeat;
+}
+.header ul.headerNav,
+.header ul.countNav {
+  line-height: 100px;
+}
+.header ul.headerNav li.firstPage {
+  margin-left: 20px;
+}
+.header ul.headerNav li {
+  float: left;
+  width: 95px;
+  margin-right: 20px;
+  text-align: center;
+}
+.header ul.headerNav li a {
+  display: block;
+  width: 95px;
+  height: 100px;
+  color: #666;
+}
+.header ul.headerNav li a.active,
+.header ul.countNav li a.active {
+  border-bottom: 4px solid #198bd4;
+}
+.header ul.headerNav li a:hover,
+.header ul.countNav li a:hover {
+  text-decoration:none;
+}
+.header ul.countNav {
+  float: right;
+  margin: 0;
+}
+.header ul.countNav li {
+  float: left;
+  margin-top: 32px;
+}
+.header ul.countNav li.searchFrame {
+  margin-top: 40px;
+  padding-right: 33px;
+  border-right: 1px solid #c3c3c3;
+}
+.header ul.countNav li.accountFrame {
+  padding-left: 28px;
+}
+.header ul.countNav li a {
+  color: #666;
+  display: block;
+}
+.header ul.countNav li a.searchBtn {
+  width: 20px;
+  height: 20px;
+  background: transparent url(../../img/numSelection/search.png) center no-repeat;
+}
+.header ul.countNav li a.account {
+  width: 37px;
+  height: 37px;
+  background: transparent url(../../img/numSelection/account.png) center no-repeat;
+}
+/*底部样式*/
+.footer{
+	width: 100%;
+	text-align: center;
+    color: #bdc3c7;
+    font-size: 14px;
+    padding: 30px 0;
+    border-top: 1px solid #ecedee;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+/*中间部分*/
+/*选项卡*/
+.content .tableNav{
+	border-bottom: 1px solid #ecedee;
+	margin-bottom: 60px;
+}
+.content .tableNav ul li{
+	height: 42px;
+	font-family: ﻿MicrosoftYaHei;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 42px;
+	letter-spacing: 0px;
+	color: #000000;
+	float: left;
+	margin-right: 35px;
+}
+.content .tableNav ul li.active{
+	color: #198bd4;
+	border-bottom: 2px solid #198bd4;
+}
+/*中间部分*/
+.content .onlineRechargeBody{
+	width: 700px;
+	margin: 0 auto;
+}
+.content .onlineRechargeBody .imgDiv{
+	width: 450px;
+	margin: 0 auto;
+} 
+.content .onlineRechargeBody .onlineRechargeCon{
+	border: 1px solid #ecedee;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+.content .onlineRechargeBody .onlineRechargeCon .phoneText{
+	width: 293px;
+	height: 36px;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px #b5b7bb;
+	display: inline-block;
+}
+.content .onlineRechargeBody .onlineRechargeCon .form-group label{
+	font-family: ﻿MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 26px;
+	letter-spacing: 0px;
+	color: #666666;
+	margin-right: 15px;
+}
+.content .onlineRechargeBody .onlineRechargeCon .form-group .money{
+	width: 510px;
+	display: inline-block;
+	vertical-align: -webkit-baseline-middle;
+	vertical-align:middle
+}
+.content .onlineRechargeBody .onlineRechargeCon .form-group .money ul li{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.content .onlineRechargeBody .onlineRechargeCon .form-group .money ul li a{
+	width: 78px;
+	height: 36px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px #b5b7bb;
+	display: block;
+	line-height: 36px;
+	text-align: center;
+	font-family: ﻿MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #666666;
+	cursor: pointer;
+}
+.content .onlineRechargeBody .onlineRechargeCon .form-group .money ul li a.on{
+	color: #4ca5fc;
+	border: solid 1px #4ca5fc;
+}
+.content .onlineRechargeBody .onlineRechargeCon .form-group .money ul li .numberText{
+	width: 185px;
+	height: 36px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px #b5b7bb;
+	font-family: ﻿MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+}
+.content .onlineRechargeBody .onlineRechargeCon .buttonDiv{
+	margin-top: 70px;
+	padding-right: 50px;
+	margin-bottom: 50px;
+}
+.content .onlineRechargeBody .onlineRechargeCon .buttonDiv .rechargeButton{
+	width: 145px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	background-color: #4ca5fc;
+	border-radius: 4px 4px 4px 4px;
+	font-family: ﻿MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #fffefe;
+	display: inline-block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+/*确认并支付*/
+.mt80{
+	margin-top: 80px;
+}
+.payContent{
+	width: 830px;
+    margin: auto;
+    border: 1px solid #ecedee;
+    padding: 45px 75px;
+}
+.case{
+	width: 164px;
+	height: 44px;
+	border-radius: 2px 2px 2px 2px;
+	border: solid 1px #e6eaef;
+	padding: 5px 10px;
+	margin-left: 30px;
+}
+.contents{
+	margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 20px 10px;
+}
+.preButton{
+	background-color: #fff;
+    text-align: center;
+    width: 145px;
+    height: 45px;
+    border: 1px solid #4ca5fc;
+    line-height: 45px;
+    color: #4ca5fc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+.width320{
+	width: 320px;
+}
+.width145{
+	width: 145px;
+}
+.marginAuto{
+	margin: 0 auto;
+}
+/*完成页面*/
+.content .onlineRechargeBody .RechargeComplete{
+	width: 700px;
+	height: 450px;
+	border: 1px solid #ecedee;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+.content .onlineRechargeBody .RechargeComplete .paying{
+	margin: 215px auto;
+}
+.content .onlineRechargeBody .RechargeComplete .paying p{
+	font-family: ﻿MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #666666;
+	text-align: center;
+}
+.content .onlineRechargeBody .RechargeComplete .complete{
+	width: 210px;
+    margin: 85px auto;
+}
+.content .onlineRechargeBody .RechargeComplete .complete p{
+	font-family: ﻿MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #666666;
+	text-align: center;
+}
+.content .onlineRechargeBody .RechargeComplete .complete .completeButton{
+	width: 145px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	background-color: #4ca5fc;
+	border-radius: 4px 4px 4px 4px;
+	font-family: ﻿MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #fffefe;
+	display: inline-block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+/*充值卡充值*/
+.content .cardRechargeBody{
+	width: 700px;
+	margin: 0 auto;
+}
+.content .cardRechargeBody .imgDiv{
+	width: 255px;
+	margin: 0 auto;
+}
+.content .cardRechargeBody .cardRechargeCon{
+	border: 1px solid #ecedee;
+	padding: 60px 150px;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+.content .cardRechargeBody .cardRechargeCon .phoneText{
+	width: 293px;
+	height: 36px;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px #b5b7bb;
+	display: inline-block;
+}
+.content .cardRechargeBody .cardRechargeCon .form-group label{
+	font-family: ﻿MicrosoftYaHei;
+	width: 85px;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 26px;
+	letter-spacing: 0px;
+	color: #666666;
+	margin-right: 15px;
+}
+.content .cardRechargeBody .cardRechargeCon .buttonDiv .rechargeButton{
+	width: 145px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	background-color: #4ca5fc;
+	border-radius: 4px 4px 4px 4px;
+	font-family: ﻿MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #fffefe;
+	display: inline-block;
+	margin: 0 auto;
+	cursor: pointer;
+}
