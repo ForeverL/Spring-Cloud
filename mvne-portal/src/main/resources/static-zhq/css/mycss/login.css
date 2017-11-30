@@ -34,12 +34,11 @@ body{
 .header ul.headerNav li {
   float: left;
   width: 95px;
-  margin-right: 20px;
   text-align: center;
 }
 .header ul.headerNav li a {
   display: block;
-  width: 95px;
+  width: 110px;
   height: 100px;
   color: #666;
 }
