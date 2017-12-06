@@ -2,7 +2,7 @@
 $(function () {
 
   // 刚进来页面号码列表刷新
-  $.ajax({
+  /*$.ajax({
     url : "/getPhoneNum",
     contentType : "application/json",
     type : "POST",
@@ -28,7 +28,7 @@ $(function () {
       console.log("总"+localStorage.total);
       console.log("当前"+localStorage.currentPage);
     }
-  });
+  });*/
 
 // 渲染号码列表
   function renderNumer(number){
@@ -47,7 +47,7 @@ $(function () {
       $(".menu .carAss li a").removeClass();
       $(this).addClass("carActive");
       // 选定一个卡类之后的ajax局部刷新页面
-      $.ajax({
+      /*$.ajax({
         url : "/getPhoneNum",
         contentType : "application/json",
         type : "POST",
@@ -70,7 +70,7 @@ $(function () {
 
           renderNumer(data.numbers);
         }
-      });
+      });*/
     });
   }
   selectedCard();
@@ -80,7 +80,7 @@ $(function () {
       $(".menu .setMeal li a").removeClass();
       $(this).addClass("packageActive");
       // 选定一个套餐类型之后的ajax局部刷新页面
-      $.ajax({
+      /*$.ajax({
         url : "/getPhoneNum",
         contentType : "application/json",
         type : "POST",
@@ -104,7 +104,7 @@ $(function () {
 
           renderNumer(data.numbers);
         }
-      });
+      });*/
     });
   }
   packageAct();
@@ -113,8 +113,9 @@ $(function () {
     $(".menu .numberAss li a").click(function() {
       $(".menu .numberAss li a").removeClass();
       $(this).addClass("numberType");
+
       // 选定一个号码类型之后的ajax局部刷新页面
-      $.ajax({
+      /*$.ajax({
         url : "/getPhoneNum",
         contentType : "application/json",
         type : "POST",
@@ -137,7 +138,7 @@ $(function () {
 
           renderNumer(data.numbers);
         }
-      });
+      });*/
     });
   };
   numberType();
@@ -185,7 +186,7 @@ $(function () {
         var rgx = $(".numberKey").val();
         console.log(rgx);
         console.log("搜索中");
-        $.ajax({
+        /*$.ajax({
           url : "/getPhoneNum",
           contentType : "application/json",
           type : "POST",
@@ -203,7 +204,7 @@ $(function () {
             console.log(data);
             renderNumer(data.numbers)
           }
-        });
+        });*/
       }
     });
 // 定义当前页数
@@ -220,7 +221,7 @@ $(function () {
     // 当点击的页数小于总页数时跳转
     if(localStorage.currentPage < localStorage.total || localStorage.currentPage == localStorage.total ){
       console.log("跳转到下一页");
-      $.ajax({
+      /*$.ajax({
         url : "/getPhoneNum",
         contentType : "application/json",
         type : "POST",
@@ -238,13 +239,13 @@ $(function () {
           console.log(data);
           renderNumer(data.numbers)
         }
-      });
+      });*/
     }else {
       // 当当前页数大于总页数的时候，重置当前页数，并且跳转到第一页
       localStorage.currentPage = 1;
       //console.log(pageNum);
       console.log("跳转到第一页");
-      $.ajax({
+      /*$.ajax({
         url : "/getPhoneNum",
         contentType : "application/json",
         type : "POST",
@@ -262,7 +263,7 @@ $(function () {
           console.log(data);
           renderNumer(data.numbers)
         }
-      });
+      });*/
     }
   });
 // 点击下一步
