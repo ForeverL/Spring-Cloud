@@ -110,35 +110,30 @@ $(function () {
   packageAct();
 // 点击号码类型
   function numberType() {
-    $(".menu .numberAss li a").click(function() {
-      $(".menu .numberAss li a").removeClass();
-      $(this).addClass("numberType");
-
-      // 选定一个号码类型之后的ajax局部刷新页面
-      /*$.ajax({
-        url : "/getPhoneNum",
-        contentType : "application/json",
-        type : "POST",
-        data : JSON.stringify({
-          //"numRegex" : $(this).text(),
-          "provCode":"200",
-          "cityCode":"755",
-          "pageNum":1,
-          "pageSize":8,
-          "mno_id":"CMCC",
-          "mvno_id":"ZXST01"
-        }),
-        success : function(data) {
-          console.log(data);
-          // 储存总页数
-          localStorage.total = data.total;
-          // 储存当前页数
-          localStorage.CurrentPage = data.CurrentPage;
-
-
-          renderNumer(data.numbers);
-        }
-      });*/
+    $(".menu .numberAss li").click(function () {
+      var index = $(this).index();
+      console.log(index);
+      $(this).find("a").addClass("numberType").parent().siblings().find("a").removeClass("numberType");
+      if(index == 0){ // 选中全部
+        console.log("选中全部")
+        /*$.ajax({
+          url:"",
+          data:{},
+          success:function (data) {
+            console.log(data);
+            $(".numberKey).val("");
+          }
+        });*/
+      }else if(index == 1){
+        console.log("选中全部")
+        /*$.ajax({
+         url:"",
+         data:{},
+         success:function (data) {
+         console.log(data);
+         }
+         });*/
+      }
     });
   };
   numberType();
