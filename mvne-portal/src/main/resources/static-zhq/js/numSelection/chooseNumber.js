@@ -26,7 +26,9 @@ $(function () {
       localStorage.currentPage = data.currentPage;
 
       console.log("总"+localStorage.total);
-      console.log("当前"+localStorage.currentPage);
+      console.log("当前"+localStorage.currentPage);    
+	  
+	  
     }
   });*/
 
