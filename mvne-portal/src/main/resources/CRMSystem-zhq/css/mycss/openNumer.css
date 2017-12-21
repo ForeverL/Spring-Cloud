@@ -1,0 +1,71 @@
+.header {
+  padding-left: 39px;
+  font-size: 20px;
+  height: 70px;
+  line-height: 70px;
+  background-color: #6d9bee;
+  color: #fff;
+}
+.header a {
+  float: right;
+  margin-right: 52px;
+  color: #fff;
+  font-size: 16px;
+}
+.content {
+  background-color: #f5f7fa;
+}
+.content ul {
+  float: left;
+  width: 240px;
+  height: 100%;
+  background-color: #f5f7fa;
+}
+.content ul li {
+  height: 49px;
+  line-height: 49px;
+  padding-left: 40px;
+  font-size: 16px;
+}
+.content ul li.active {
+  background-color: #e1edfa;
+  border-right: 4px solid #60a5f5;
+}
+.content ul li a i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.content ul li a i.img1 {
+  background: transparent url("../../img/openNumber/img1.png") center no-repeat;
+}
+.content ul li a i.img2 {
+  background: transparent url("../../img/openNumber/img2.png") center no-repeat;
+}
+.content ul li a i.img3 {
+  background: transparent url("../../img/openNumber/img3.png") center no-repeat;
+}
+.content ul li a i.img4 {
+  background: transparent url("../../img/openNumber/img4.png") center no-repeat;
+}
+.content ul li a i.img5 {
+  background: transparent url("../../img/openNumber/img5.png") center no-repeat;
+}
+.content ul li a i.img6 {
+  background: transparent url("../../img/openNumber/img6.png") center no-repeat;
+}
+.content ul li a i.img7 {
+  background: transparent url("../../img/openNumber/img7.png") center no-repeat;
+}
+.content ul li a span {
+  margin-left: 8px;
+  width: 64px;
+  display: inline-block;
+  text-align: center;
+}
+
+.rightContent {
+  background-color: #fff;
+  height: 100%;
+}

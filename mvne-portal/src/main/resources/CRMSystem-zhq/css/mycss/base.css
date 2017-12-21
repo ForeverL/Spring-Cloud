@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*公共样式*/
+/* Reset css*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-family: "microsoft yahei";
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 14px;
+  line-height: 1.5;
+}
+body {
+  _overflow: auto;
+  _height: 100%;
+  margin: 0 auto;
+}
+html {
+  _overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+fieldset,
+img {
+  border: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 14px;
+  line-height: 1.5;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  color: #333;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  width: 0;
+  height: 0;
+}
+/*a*/
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f5f7fa;
+}
