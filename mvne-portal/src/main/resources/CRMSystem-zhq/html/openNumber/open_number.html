@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>号码开户</title>
-  <link rel="stylesheet" href="../css/mycss/base.css">
-  <link rel="stylesheet" href="../css/mycss/openNumer.css">
+  <title>号码开户3</title>
+  <link rel="stylesheet" href="../../css/mycss/base.css">
+  <link rel="stylesheet" href="../../css/mycss/openNumer.css">
 </head>
 <body>
 <div class="main">
@@ -89,9 +89,7 @@
           </tbody>
         </table>
       </div>
-      <div class="sequence">
-        <div class="sequenceImg"></div>
-      </div>
+      <div class="sequenceThree"></div>
       <div class="orderTable openinfo">
         <h2>开户信息表</h2>
         <table>
@@ -127,6 +125,55 @@
     </div>
   </div>
 </div>
-
+<!--不完整-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips imperfect">
+    <p>实名制认证信息审核未完成，请检查后再试！</p>
+    <input type="button" value="确认" id="imperfectBtn">
+  </div>
+</div>
+<!--开户成功-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips successFram">
+    <div class="successTitle">开户成功</div>
+    <div class="successContent">
+      <p>开户应答成功！</p>
+      <p>手机号码：<span class="phoneNumber">13988886666</span></p>
+      <p>IMSI:0000111100001111</p>
+    </div>
+    <div class="successBtnBlock">
+      <input type="button" value="确定" id="successBtn">
+    </div>
+  </div>
+</div>
+<!--开户确认-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips confirm">
+    <p>您正在为客户<span>139000022222</span>进行号码开户操作，请确认是否继续。</p>
+    <input type="button" value="确认" id="confirmSuccessBtn"><input type="button" value="取消" id="confirmCancelBtn">
+  </div>
+</div>
+<!--开户失败-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips successFram">
+    <div class="successTitle">开户失败</div>
+    <div class="successContent">
+      <p>开户应答失败！</p>
+      <p>手机号码：<span class="phoneNumber">13988886666</span></p>
+      <p>IMSI:0000111100001111</p>
+      <p>错误原因：<span>网络故障</span></p>
+    </div>
+    <div class="successBtnBlock">
+      <input type="button" value="确定" id="failBtn">
+    </div>
+  </div>
+</div>
+<!--未完成-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips imperfect">
+    <p>虚卡写卡未完成，请检查后再试！</p>
+    <input type="button" value="确认" id="notFinishBtn">
+  </div>
+</div>
 </body>
 </html>

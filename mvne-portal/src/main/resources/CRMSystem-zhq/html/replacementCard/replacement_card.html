@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>补换卡</title>
+  <link rel="stylesheet" href="../../css/mycss/base.css">
+  <link rel="stylesheet" href="../../css/mycss/replacementCard.css">
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <span>客户关系管理系统</span>
+    <a href="javascript:;">退出 &gt; </a>
+  </div>
+  <div class="content">
+    <ul class="leftNav">
+      <li><a href="javascript:;"><i class="img1"></i><span>号码开户</span></a></li>
+      <li><a href="javascript:;"><i class="img2"></i><span>套餐变更</span></a></li>
+      <li class="active"><a href="javascript:;"><i class="img3"></i><span>补换卡</span></a></li>
+      <li><a href="javascript:;"><i class="img4"></i><span>停复机</span></a></li>
+      <li><a href="javascript:;"><i class="img5"></i><span>号码销户</span></a></li>
+      <li><a href="javascript:;"><i class="img6"></i><span>密码重置</span></a></li>
+      <li><a href="javascript:;"><i class="img7"></i><span>查询</span></a></li>
+    </ul>
+    <div class="rightContent">
+      <div class="caseNum">
+        <span>受理号码</span>
+        <input type="text" id="inputText">
+        <input type="button" value="查询" id="queryBtn">
+      </div>
+      <div class="userInfo">
+        <h3>用户信息</h3>
+        <label for="userName">
+          <span>客户姓名</span><input type="text" id="userName">
+        </label>
+        <label for="userType">
+          <span>客户类型</span><input type="text" id="userType">
+        </label>
+        <label for="targetState">
+          <span>目标状态</span><input type="text" id="targetState">
+        </label>
+        <label for="chanceBalance">
+          <span>话费余额</span><input type="text" id="chanceBalance">
+        </label>
+        <label for="IDType">
+          <span>证件类型</span><input type="text" id="IDType">
+        </label>
+        <label for="IDNumber">
+          <span>证件号码</span><input type="text" id="IDNumber">
+        </label>
+        <label for="openDate">
+          <span>开户日期</span><input type="text" id="openDate">
+        </label>
+      </div>
+      <div class="originalCard">
+        <h3>原卡信息</h3>
+        <label for="cardInfo">
+          <span>原SIM卡类型</span><input type="text" id="cardInfo">
+        </label>
+        <label for="cardIMSI">
+          <span>原SIM卡IMSI</span><input type="text" id="cardIMSI">
+        </label>
+      </div>
+      <div class="newCardType">
+        <h3>新卡类型</h3>
+        <label for="IMSIquery">
+          <span>IMSI查询</span><input type="text" id="IMSIquery">
+        </label>
+        <div class="IMSINumberList">
+          <span>0000222244441111</span>
+          <span>0000222244441111</span>
+          <span>0000222244441111</span>
+          <span>0000222244441111</span>
+          <span>0000222244441111</span>
+          <span>0000222244441111</span>
+          <span>0000222244441111</span>
+          <span>0000222244441111</span>
+          <span>0000222244441111</span>
+          <span>0000222244441111</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--不完整-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips imperfect">
+    <p>实名制认证信息审核未完成，请检查后再试！</p>
+    <input type="button" value="确认" id="imperfectBtn">
+  </div>
+</div>
+<!--开户成功-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips successFram">
+    <div class="successTitle">开户成功</div>
+    <div class="successContent">
+      <p>开户应答成功！</p>
+      <p>手机号码：<span class="phoneNumber">13988886666</span></p>
+      <p>IMSI:0000111100001111</p>
+    </div>
+    <div class="successBtnBlock">
+      <input type="button" value="确定" id="successBtn">
+    </div>
+  </div>
+</div>
+<!--开户确认-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips confirm">
+    <p>您正在为客户<span>139000022222</span>进行号码开户操作，请确认是否继续。</p>
+    <input type="button" value="确认" id="confirmSuccessBtn"><input type="button" value="取消" id="confirmCancelBtn">
+  </div>
+</div>
+<!--开户失败-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips successFram">
+    <div class="successTitle">开户失败</div>
+    <div class="successContent">
+      <p>开户应答失败！</p>
+      <p>手机号码：<span class="phoneNumber">13988886666</span></p>
+      <p>IMSI:0000111100001111</p>
+      <p>错误原因：<span>网络故障</span></p>
+    </div>
+    <div class="successBtnBlock">
+      <input type="button" value="确定" id="failBtn">
+    </div>
+  </div>
+</div>
+<!--未完成-->
+<div class="confirmFram" style="display: none">
+  <div class="framTips imperfect">
+    <p>虚卡写卡未完成，请检查后再试！</p>
+    <input type="button" value="确认" id="notFinishBtn">
+  </div>
+</div>
+</body>
+</html>
